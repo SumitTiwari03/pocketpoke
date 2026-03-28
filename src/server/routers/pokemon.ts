@@ -3,7 +3,7 @@ import { prisma } from "@/server/db";
 import { createTRPCRouter, publicProcedure } from "@/server/trpc";
 
 export const pokemonRouter = createTRPCRouter({
-  // 🔹 get all names
+  // get all names
   getNames: publicProcedure.query(async () => {
     const rows = await prisma.pokemon.findMany({
       orderBy: { name: "asc" },
@@ -13,7 +13,7 @@ export const pokemonRouter = createTRPCRouter({
     return rows.map((r) => r.name);
   }),
 
-  // 🔹 single pokemon
+  //  single pokemon
   getByName: publicProcedure
     .input(z.object({ name: z.string() }))
     .query(async ({ input }) => {
@@ -49,7 +49,7 @@ export const pokemonRouter = createTRPCRouter({
       };
     }),
 
-  // 🔹 multiple pokemon
+  //  multiple pokemon
   getByNames: publicProcedure
     .input(z.object({ names: z.array(z.string()) }))
     .query(async ({ input }) => {
@@ -82,7 +82,7 @@ export const pokemonRouter = createTRPCRouter({
       }));
     }),
 
-  // 🔹 favorites by ids
+  //  favorites by ids
   getByIds: publicProcedure
     .input(z.object({ ids: z.array(z.number()) }))
     .query(async ({ input }) => {
@@ -115,7 +115,7 @@ export const pokemonRouter = createTRPCRouter({
       }));
     }),
 
-  // 🔹 all types
+  //  all types
   getTypes: publicProcedure.query(async () => {
     const rows = await prisma.type.findMany({
       orderBy: { name: "asc" },
@@ -125,7 +125,7 @@ export const pokemonRouter = createTRPCRouter({
     return rows.map((t) => t.name.toLowerCase());
   }),
 
-  // 🔹 filter + pagination
+  //  filter + pagination
   getByType: publicProcedure
     .input(
       z.object({

@@ -25,7 +25,7 @@ async function main() {
       poke.specialDefense +
       poke.speed;
 
-    console.log("Adding:", poke.name); // 👈 human touch
+    console.log("Adding:", poke.name); 
 
     await prisma.pokemon.upsert({
       where: { pokedexNumber: poke.pokedexNumber },
