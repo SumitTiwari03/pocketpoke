@@ -29,7 +29,7 @@ export function PocketPokemonCardGrid({ title, pokemon, emptyMessage }: PocketPo
       {pokemon.length > 0 && (
         <Grid container spacing={2}>
           {pokemon.map((entry) => (
-            <Grid key={entry.id} item xs={12} sm={6} md={4}>
+            <Grid key={entry.id} size={{ xs: 12, sm: 6, md: 4 }}>
               <PocketPokemonCard pokemon={entry} />
             </Grid>
           ))}
