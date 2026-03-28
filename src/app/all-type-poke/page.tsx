@@ -20,6 +20,7 @@ export default function AllTypePokePage() {
   });
 
   function handleSelectType(type: string | undefined) {
+    console.log("selected type:", selectedType);
     setSelectedType(type);
     setPage(1);
   }
@@ -32,11 +33,11 @@ export default function AllTypePokePage() {
           <PocketPokemonTypeSelect selectedType={selectedType} selectType={handleSelectType} options={typeQuery.data ?? []} />
         </Paper>
 
-        {pokemonQuery.error ? <Alert severity="error">Unable to load pokemon list.</Alert> : null}
-
+        {pokemonQuery.error ? <p>Unable to load pokemon list</p> : null}
+        
         <PocketPokemonCardGrid
           title={selectedType ? `Type: ${selectedType}` : "All Pokemon"}
-          pokemon={(pokemonQuery.data?.items ?? []) as PocketPokemonListItem[]}
+          pokemon={pokemonQuery.data?.items ?? []}
           emptyMessage="No Pokemon found for this selection."
         />
 

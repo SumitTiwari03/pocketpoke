@@ -1,72 +1,69 @@
 "use client";
 
-import { createContext, useContext, useEffect, useMemo, useState } from "react";
+import { createContext, useContext, useEffect, useState } from "react";
 
-type PocketPokemonFavoritesContextValue = {
+type FavoritesContextType = {
   favoriteIds: number[];
-  isFavorite: (pokemonId: number) => boolean;
-  toggleFavorite: (pokemonId: number) => void;
+  isFavorite: (id: number) => boolean;
+  toggleFavorite: (id: number) => void;
   clearFavorites: () => void;
 };
 
-const FAVORITES_STORAGE_KEY = "pocketpokemon:favorites";
+const FavoritesContext = createContext<FavoritesContextType | null>(null);
 
-const PocketPokemonFavoritesContext = createContext<PocketPokemonFavoritesContextValue | undefined>(undefined);
+const STORAGE_KEY = "favorites";
 
-export function PocketPokemonFavoritesProvider(props: { children: React.ReactNode }) {
-  const [favoriteIds, setFavoriteIds] = useState<number[]>(() => {
-    if (typeof window === "undefined") {
-      return [];
-    }
+export function PocketPokemonFavoritesProvider({ children }: { children: React.ReactNode }) {
+  const [favoriteIds, setFavoriteIds] = useState<number[]>([]);
 
-    try {
-      const raw = window.localStorage.getItem(FAVORITES_STORAGE_KEY);
-
-      if (!raw) {
-        return [];
-      }
-
-      const parsed = JSON.parse(raw) as unknown;
-
-      if (!Array.isArray(parsed)) {
-        return [];
-      }
-
-      return [...new Set(parsed.filter((value): value is number => typeof value === "number"))];
-    } catch {
-      return [];
-    }
-  });
-
+  // load once
   useEffect(() => {
-    window.localStorage.setItem(FAVORITES_STORAGE_KEY, JSON.stringify(favoriteIds));
+    const saved = localStorage.getItem(STORAGE_KEY);
+    if (saved) {
+      try {
+        setFavoriteIds(JSON.parse(saved));
+      } catch {
+        console.log("failed to parse favorites");
+      }
+    }
+  }, []);
+
+  // save on change
+  useEffect(() => {
+    localStorage.setItem(STORAGE_KEY, JSON.stringify(favoriteIds));
   }, [favoriteIds]);
 
-  const value = useMemo<PocketPokemonFavoritesContextValue>(
-    () => ({
-      favoriteIds,
-      isFavorite: (pokemonId: number) => favoriteIds.includes(pokemonId),
-      toggleFavorite: (pokemonId: number) => {
-        setFavoriteIds((current) =>
-          current.includes(pokemonId)
-            ? current.filter((id) => id !== pokemonId)
-            : [...current, pokemonId],
-        );
-      },
-      clearFavorites: () => setFavoriteIds([]),
-    }),
-    [favoriteIds],
-  );
+  function toggleFavorite(id: number) {
+    setFavoriteIds((prev) =>
+      prev.includes(id)
+        ? prev.filter((x) => x !== id)
+        : [...prev, id]
+    );
+  }
 
-  return <PocketPokemonFavoritesContext.Provider value={value}>{props.children}</PocketPokemonFavoritesContext.Provider>;
+  function isFavorite(id: number) {
+    return favoriteIds.includes(id);
+  }
+
+  function clearFavorites() {
+    setFavoriteIds([]);
+  }
+
+  return (
+    <FavoritesContext.Provider
+      value={{ favoriteIds, isFavorite, toggleFavorite, clearFavorites }}
+    >
+      {children}
+    </FavoritesContext.Provider>
+  );
 }
 
 export function usePocketPokemonFavorites() {
-  const context = useContext(PocketPokemonFavoritesContext);
+  const ctx = useContext(FavoritesContext);
 
-  if (!context) {
-    throw new Error("usePocketPokemonFavorites must be used within PocketPokemonFavoritesProvider");
+  if (!ctx) {
+    throw new Error("FavoritesProvider missing");
   }
 
-  return context;
+  return ctx;
 }

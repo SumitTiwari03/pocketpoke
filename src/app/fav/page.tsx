@@ -4,30 +4,41 @@ import { Alert, Container, Stack, Typography } from "@mui/material";
 
 import { PocketPokemonCardGrid } from "@/components/pocketpokemon/PocketPokemonCardGrid";
 import { usePocketPokemonFavorites } from "@/components/providers/PocketPokemonFavoritesProvider";
-import type { PocketPokemonListItem } from "@/types/pocketPokemon";
 import { trpc } from "@/trpc/react";
 
-export default function FavPage() {
+export default function FavoritesPage() {
   const { favoriteIds } = usePocketPokemonFavorites();
 
   const favoritesQuery = trpc.pokemon.getByIds.useQuery(
     { ids: favoriteIds },
-    {
-      enabled: favoriteIds.length > 0,
-    },
+    { enabled: favoriteIds.length > 0 }
   );
 
-  return (
-    <Container maxWidth="lg" sx={{ py: 5 }}>
-      <Stack spacing={2.5}>
-        <Typography variant="h4">Fav</Typography>
-        <Typography color="text.secondary">Your favorites are stored in this browser.</Typography>
+  console.log("favorites:", favoriteIds);
 
-        {favoritesQuery.error ? <Alert severity="error">Could not load favorite Pokemon.</Alert> : null}
+  const data =
+    favoriteIds.length === 0
+      ? []
+      : favoritesQuery.data ?? [];
+
+  return (
+    <Container maxWidth="lg" sx={{ py: 4 }}>
+      <Stack spacing={2}>
+        <Typography variant="h5" sx={{ fontWeight: 600 }}>
+          favorites
+        </Typography>
+
+        <Typography color="text.secondary" sx={{ fontSize: 13 }}>
+          saved locally in browser
+        </Typography>
+
+        {favoritesQuery.error && (
+          <Alert severity="error">Failed to load favorites</Alert>
+        )}
 
         <PocketPokemonCardGrid
-          pokemon={(favoriteIds.length === 0 ? [] : favoritesQuery.data ?? []) as PocketPokemonListItem[]}
-          emptyMessage="No favorites yet. Add favorites from cards in Search or All Type pages."
+          pokemon={data}
+          emptyMessage="no favorites yet"
         />
       </Stack>
     </Container>

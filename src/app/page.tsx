@@ -23,13 +23,13 @@ export default function Home() {
           }}
         >
           <Typography variant="overline" sx={{ letterSpacing: 1.2, color: "primary.main", fontWeight: 700 }}>
-            Welcome Trainer
+            hey pokemon lovers 
           </Typography>
           <Typography variant="h2" sx={{ fontSize: { xs: "2.1rem", md: "3rem" }, maxWidth: 800 }}>
-            Pokedex: Discover, Search, Compare, and Favorite Pokemon
+            Pocketpoke: Discover, Search, Compare, and Favorite Pokemon
           </Typography>
           <Typography color="text.secondary" sx={{ maxWidth: 760 }}>
-            Browse popular Pokemon below, then jump into single search or comparison workflows.
+            Browse popular Pokemon below, then jump to search or compare pokemons.
           </Typography>
           <Stack direction={{ xs: "column", sm: "row" }} spacing={1.2}>
             <Button component={Link} href="/compare-poke" variant="contained" color="primary" size="large" sx={{ borderRadius: 1.25 }}>

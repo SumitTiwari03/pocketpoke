@@ -14,30 +14,20 @@ export function PocketPokemonTypeSelect({
   options,
 }: PocketPokemonTypeSelectProps) {
   return (
-    <FormControl
-      fullWidth
-      size="small"
-      sx={{
-        "& .MuiOutlinedInput-root": {
-          borderRadius: 1.5,
-          backgroundColor: "rgba(255,255,255,0.68)",
-          "& fieldset": {
-            borderColor: "rgba(234,88,12,0.3)",
-          },
-        },
-      }}
-    >
-      <InputLabel id="pocketpokemon-type-label">Pokemon Type</InputLabel>
+    <FormControl fullWidth size="small">
+      <InputLabel id="type-label">Type</InputLabel>
+
       <Select
-        labelId="pocketpokemon-type-label"
+        labelId="type-label"
         value={selectedType ?? ""}
-        label="Pokemon Type"
-        onChange={(event) => selectType(event.target.value || undefined)}
+        label="Type"
+        onChange={(e) => selectType(e.target.value || undefined)}
       >
-        <MenuItem value="">All types</MenuItem>
-        {options.map((type) => (
-          <MenuItem key={type} value={type}>
-            {type}
+        <MenuItem value="">all</MenuItem>
+
+        {options.map((t) => (
+          <MenuItem key={t} value={t}>
+            {t}
           </MenuItem>
         ))}
       </Select>

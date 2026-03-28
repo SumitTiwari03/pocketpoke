@@ -1,108 +1,76 @@
-import { PrismaClient } from '@prisma/client'
-import pokemonData from './data/pokemon.json'
+import { PrismaClient } from "@prisma/client";
+import pokemonData from "./data/pokemon.json";
 
-const prisma = new PrismaClient()
-
-type ConnectOrCreateItem = {
-  where?: { name?: string }
-  create?: { name?: string }
-}
-
-function normalizeConnectOrCreate(input: unknown) {
-  if (!Array.isArray(input)) {
-    return []
-  }
-
-  return input
-    .map((item) => {
-      const entry = item as ConnectOrCreateItem
-      const name = entry.create?.name ?? entry.where?.name
-
-      if (!name) {
-        return null
-      }
-
-      return {
-        where: { name },
-        create: { name }
-      }
-    })
-    .filter((item): item is { where: { name: string }; create: { name: string } } => item !== null)
-}
+const prisma = new PrismaClient();
 
 async function main() {
-  console.log('Start seeding...')
+  console.log("Seeding started...");
 
-  for (const p of pokemonData) {
-    const types = normalizeConnectOrCreate((p as { types?: { connectOrCreate?: unknown[] } }).types?.connectOrCreate)
+  for (const poke of pokemonData) {
+    const types = poke.types?.connectOrCreate?.map((t: any) => ({
+      where: { name: t.create?.name },
+      create: { name: t.create?.name },
+    })) || [];
 
-    const abilities = normalizeConnectOrCreate((p as { abilities?: { connectOrCreate?: unknown[] } }).abilities?.connectOrCreate)
+    const abilities = poke.abilities?.connectOrCreate?.map((a: any) => ({
+      where: { name: a.create?.name },
+      create: { name: a.create?.name },
+    })) || [];
 
     const baseTotal =
-      p.hp +
-      p.attack +
-      p.defense +
-      p.specialAttack +
-      p.specialDefense +
-      p.speed
+      poke.hp +
+      poke.attack +
+      poke.defense +
+      poke.specialAttack +
+      poke.specialDefense +
+      poke.speed;
+
+    console.log("Adding:", poke.name); // 👈 human touch
 
     await prisma.pokemon.upsert({
-      where: { pokedexNumber: p.pokedexNumber },
+      where: { pokedexNumber: poke.pokedexNumber },
       update: {
-        hp: p.hp,
-        attack: p.attack,
-        defense: p.defense,
-        specialAttack: p.specialAttack,
-        specialDefense: p.specialDefense,
-        speed: p.speed,
-        height: p.height ?? null,
-        weight: p.weight ?? null,
-        baseTotal,
-        types: {
-          connectOrCreate: types
-        },
-        abilities: {
-          connectOrCreate: abilities
-        }
+        hp: poke.hp,
+        attack: poke.attack,
+        defense: poke.defense,
       },
       create: {
-        pokedexNumber: p.pokedexNumber,
-        name: p.name,
-        classification: p.classification ?? null,
-        generation: p.generation,
-        isLegendary: p.isLegendary ?? false,
+        pokedexNumber: poke.pokedexNumber,
+        name: poke.name,
+        generation: poke.generation,
+        isLegendary: poke.isLegendary ?? false,
 
-        spriteUrl: p.spriteUrl ?? null,
+        spriteUrl: poke.spriteUrl ?? null,
 
-        hp: p.hp,
-        attack: p.attack,
-        defense: p.defense,
-        specialAttack: p.specialAttack,
-        specialDefense: p.specialDefense,
-        speed: p.speed,
+        hp: poke.hp,
+        attack: poke.attack,
+        defense: poke.defense,
+        specialAttack: poke.specialAttack,
+        specialDefense: poke.specialDefense,
+        speed: poke.speed,
 
-        height: p.height ?? null,
-        weight: p.weight ?? null,
+        height: poke.height ?? null,
+        weight: poke.weight ?? null,
         baseTotal,
 
         types: {
-          connectOrCreate: types
+          connectOrCreate: types,
         },
 
         abilities: {
-          connectOrCreate: abilities
-        }
-      }
-    })
+          connectOrCreate: abilities,
+        },
+      },
+    });
   }
 
-  console.log('Seeding complete.')
+  console.log("Done seeding");
 }
 
 main()
-.catch((e) => {
-console.error(e)
-})
-.finally(async () => {
-await prisma.$disconnect()
-})
+  .catch((e) => {
+    console.error("Seed error:", e);
+  })
+  .finally(async () => {
+    await prisma.$disconnect();
+  });

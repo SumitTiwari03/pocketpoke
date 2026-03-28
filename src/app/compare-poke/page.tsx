@@ -1,6 +1,6 @@
 "use client";
 
-import { useMemo, useState } from "react";
+import { useState } from "react";
 import {
   Alert,
   Autocomplete,
@@ -19,70 +19,102 @@ import {
 } from "@mui/material";
 
 import { PocketPokemonCardGrid } from "@/components/pocketpokemon/PocketPokemonCardGrid";
-import type { PocketPokemonListItem } from "@/types/pocketPokemon";
 import { trpc } from "@/trpc/react";
 
-export default function ComparePokePage() {
+export default function PokemonComparePage() {
   const namesQuery = trpc.pokemon.getNames.useQuery();
 
-  const [leftName, setLeftName] = useState<string | null>("Bulbasaur");
-  const [rightName, setRightName] = useState<string | null>("Charmander");
-  const [submittedNames, setSubmittedNames] = useState<string[]>(["Bulbasaur", "Charmander"]);
+  const [poke1, setpoke1] = useState<string | null>("Bulbasaur");
+  const [poke2, setpoke2] = useState<string | null>("Charmander");
+  const [submittedNames, setSubmittedNames] = useState<string[]>([
+    "Bulbasaur",
+    "Charmander",
+  ]);
 
   const compareQuery = trpc.pokemon.getByNames.useQuery(
     { names: submittedNames },
-    {
-      enabled: submittedNames.length === 2,
-    },
+    { enabled: submittedNames.length === 2 },
   );
 
-  const compared = useMemo(() => (compareQuery.data ?? []) as PocketPokemonListItem[], [compareQuery.data]);
+  const compared = compareQuery.data ?? [];
 
   function handleCompare() {
-    if (!leftName || !rightName) {
-      return;
-    }
+    if (!poke1 || !poke2) return;
 
-    setSubmittedNames([leftName, rightName]);
+    console.log("compare:", poke1, poke2);
+    setSubmittedNames([poke1, poke2]);
   }
 
-  return (
-    <Container maxWidth="lg" sx={{ py: 5 }}>
-      <Stack spacing={2.5}>
-        <Typography variant="h4">Compare Poke</Typography>
+  const stats =
+    compared.length === 2
+      ? [
+          { label: "HP", left: compared[0].hp, right: compared[1].hp },
+          {
+            label: "Attack",
+            left: compared[0].attack,
+            right: compared[1].attack,
+          },
+          {
+            label: "Defense",
+            left: compared[0].defense,
+            right: compared[1].defense,
+          },
+          {
+            label: "Sp Attack",
+            left: compared[0].specialAttack,
+            right: compared[1].specialAttack,
+          },
+          {
+            label: "Sp Defense",
+            left: compared[0].specialDefense,
+            right: compared[1].specialDefense,
+          },
+          { label: "Speed", left: compared[0].speed, right: compared[1].speed },
+        ]
+      : [];
 
-        <Paper sx={{ p: 2, borderRadius: 2, border: "1px solid rgba(234,88,12,0.24)", background: "rgba(255,255,255,0.9)" }}>
-          <Stack direction={{ xs: "column", md: "row" }} spacing={1.2} alignItems={{ xs: "stretch", md: "center" }}>
+  return (
+    <Container maxWidth="lg" sx={{ py: 4 }}>
+      <Stack spacing={2.3}>
+        <Typography variant="h5" sx={{ fontWeight: 600 }}>
+          Compare Pokemon
+        </Typography>
+        <Paper sx={{ p: 2, borderRadius: 3 }}>  
+          <Stack direction={{ xs: "column", md: "row" }} spacing={1}>
             <Autocomplete
               fullWidth
               options={namesQuery.data ?? []}
-              value={leftName}
-              onChange={(_event, value) => setLeftName(value)}
-              renderInput={(params) => <TextField {...params} label="Pokemon 1" placeholder="Search pokemon" />}
+              value={poke1}
+              onChange={(_, v) => setpoke1(v)}
+              renderInput={(params) => <TextField {...params} label="Pokemon 1" size="small" />}
             />
             <Autocomplete
               fullWidth
               options={namesQuery.data ?? []}
-              value={rightName}
-              onChange={(_event, value) => setRightName(value)}
-              renderInput={(params) => <TextField {...params} label="Pokemon 2" placeholder="Search pokemon" />}
+              value={poke2}
+              onChange={(_, v) => setpoke2(v)}
+              renderInput={(params) => (
+                <TextField {...params} label="Pokemon 2" size="small" />
+              )}
             />
-            <Button variant="contained" color="primary" onClick={handleCompare} sx={{ borderRadius: 1.25 }}>
-              Compare
+            <Button variant="contained" onClick={handleCompare}>
+              <b>Compre</b>
             </Button>
           </Stack>
         </Paper>
 
-        {compareQuery.error ? <Alert severity="error">Could not compare selected Pokemon.</Alert> : null}
+        {compareQuery.error && (
+          <Alert severity="error">Could not compare</Alert>
+        )}
 
         <PocketPokemonCardGrid
           title="Selected Pokemon"
           pokemon={compared}
-          emptyMessage="Choose two Pokemon and click compare."
+          emptyMessage="Pick two Pokemon"
         />
 
-        {compared.length === 2 ? (
-          <TableContainer component={Paper} sx={{ borderRadius: 2, border: "1px solid rgba(234,88,12,0.24)" }}>
+        {stats.length > 0 && (
+          <TableContainer component={Paper}>
             <Table>
               <TableHead>
                 <TableRow>
@@ -92,28 +124,17 @@ export default function ComparePokePage() {
                 </TableRow>
               </TableHead>
               <TableBody>
-                {[
-                  ["HP", compared[0].hp, compared[1].hp],
-                  ["Attack", compared[0].attack, compared[1].attack],
-                  ["Defense", compared[0].defense, compared[1].defense],
-                  ["Sp. Attack", compared[0].specialAttack, compared[1].specialAttack],
-                  ["Sp. Defense", compared[0].specialDefense, compared[1].specialDefense],
-                  ["Speed", compared[0].speed, compared[1].speed],
-                ].map(([label, left, right]) => (
-                  <TableRow key={String(label)}>
-                    <TableCell sx={{ fontWeight: 700 }}>{label}</TableCell>
-                    <TableCell sx={{ color: Number(left) >= Number(right) ? "primary.main" : "text.primary", fontWeight: 700 }}>
-                      {left}
-                    </TableCell>
-                    <TableCell sx={{ color: Number(right) >= Number(left) ? "primary.main" : "text.primary", fontWeight: 700 }}>
-                      {right}
-                    </TableCell>
+                {stats.map((s) => (
+                  <TableRow key={s.label}>
+                    <TableCell>{s.label}</TableCell>
+                    <TableCell>{s.left}</TableCell>
+                    <TableCell>{s.right}</TableCell>
                   </TableRow>
                 ))}
               </TableBody>
             </Table>
           </TableContainer>
-        ) : null}
+        )}
       </Stack>
     </Container>
   );
