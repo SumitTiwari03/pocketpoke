@@ -1,0 +1,81 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model Pokemon {
+  id               Int      @id @default(autoincrement())
+  pokedexNumber    Int      @unique
+  name             String
+
+  classification   String?
+  generation       Int
+  isLegendary      Boolean  @default(false)
+
+  height           Float?
+  weight           Float?
+
+  hp               Int
+  attack           Int
+  defense          Int
+  specialAttack    Int
+  specialDefense   Int
+  speed            Int
+
+  baseTotal        Int?
+
+  spriteUrl        String?
+
+  createdAt        DateTime @default(now())
+  updatedAt        DateTime @updatedAt
+
+  types            Type[]
+  abilities        Ability[]
+
+  effectiveness    Effectiveness?
+
+  @@index([name])
+}
+
+model Type {
+  id        Int       @id @default(autoincrement())
+  name      String    @unique
+
+  pokemon   Pokemon[]
+}
+
+model Ability {
+  id          Int       @id @default(autoincrement())
+  name        String    @unique
+
+  pokemon     Pokemon[]
+}
+
+model Effectiveness {
+  id            Int     @id @default(autoincrement())
+  pokemon       Pokemon @relation(fields: [pokemonId], references: [id])
+  pokemonId     Int     @unique
+
+  againstBug      Float?
+  againstDark     Float?
+  againstDragon   Float?
+  againstElectric Float?
+  againstFairy    Float?
+  againstFight    Float?
+  againstFire     Float?
+  againstFlying   Float?
+  againstGhost    Float?
+  againstGrass    Float?
+  againstGround   Float?
+  againstIce      Float?
+  againstNormal   Float?
+  againstPoison   Float?
+  againstPsychic  Float?
+  againstRock     Float?
+  againstSteel    Float?
+  againstWater    Float?
+}

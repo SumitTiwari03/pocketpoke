@@ -1,0 +1,5287 @@
+[
+  {
+    "pokedexNumber": 1,
+    "name": "Bulbasaur",
+    "classification": "Pok\u00e9mon",
+    "generation": 1,
+    "isLegendary": false,
+    "height": 0.5,
+    "weight": 5.0,
+    "hp": 40,
+    "attack": 50,
+    "defense": 45,
+    "specialAttack": 50,
+    "specialDefense": 50,
+    "speed": 45,
+    "baseTotal": 300,
+    "spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1.png",
+    "types": {
+      "connectOrCreate": [
+        {
+          "where": {
+            "name": "Grass"
+          }
+        }
+      ]
+    },
+    "abilities": {
+      "connectOrCreate": [
+        {
+          "where": {
+            "name": "Overgrow"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "pokedexNumber": 2,
+    "name": "Ivysaur",
+    "classification": "Pok\u00e9mon",
+    "generation": 1,
+    "isLegendary": false,
+    "height": 0.8,
+    "weight": 7.5,
+    "hp": 41,
+    "attack": 51,
+    "defense": 46,
+    "specialAttack": 51,
+    "specialDefense": 51,
+    "speed": 46,
+    "baseTotal": 301,
+    "spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/2.png",
+    "types": {
+      "connectOrCreate": [
+        {
+          "where": {
+            "name": "Fire"
+          }
+        }
+      ]
+    },
+    "abilities": {
+      "connectOrCreate": [
+        {
+          "where": {
+            "name": "Blaze"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "pokedexNumber": 3,
+    "name": "Venusaur",
+    "classification": "Pok\u00e9mon",
+    "generation": 1,
+    "isLegendary": false,
+    "height": 1.1,
+    "weight": 10.0,
+    "hp": 42,
+    "attack": 52,
+    "defense": 47,
+    "specialAttack": 52,
+    "specialDefense": 52,
+    "speed": 47,
+    "baseTotal": 302,
+    "spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/3.png",
+    "types": {
+      "connectOrCreate": [
+        {
+          "where": {
+            "name": "Water"
+          }
+        }
+      ]
+    },
+    "abilities": {
+      "connectOrCreate": [
+        {
+          "where": {
+            "name": "Torrent"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "pokedexNumber": 4,
+    "name": "Charmander",
+    "classification": "Pok\u00e9mon",
+    "generation": 1,
+    "isLegendary": false,
+    "height": 1.4,
+    "weight": 12.5,
+    "hp": 43,
+    "attack": 53,
+    "defense": 48,
+    "specialAttack": 53,
+    "specialDefense": 53,
+    "speed": 48,
+    "baseTotal": 303,
+    "spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/4.png",
+    "types": {
+      "connectOrCreate": [
+        {
+          "where": {
+            "name": "Electric"
+          }
+        }
+      ]
+    },
+    "abilities": {
+      "connectOrCreate": [
+        {
+          "where": {
+            "name": "Static"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "pokedexNumber": 5,
+    "name": "Charmeleon",
+    "classification": "Pok\u00e9mon",
+    "generation": 1,
+    "isLegendary": false,
+    "height": 1.7,
+    "weight": 15.0,
+    "hp": 44,
+    "attack": 54,
+    "defense": 49,
+    "specialAttack": 54,
+    "specialDefense": 54,
+    "speed": 49,
+    "baseTotal": 304,
+    "spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/5.png",
+    "types": {
+      "connectOrCreate": [
+        {
+          "where": {
+            "name": "Normal"
+          }
+        }
+      ]
+    },
+    "abilities": {
+      "connectOrCreate": [
+        {
+          "where": {
+            "name": "Run Away"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "pokedexNumber": 6,
+    "name": "Charizard",
+    "classification": "Pok\u00e9mon",
+    "generation": 1,
+    "isLegendary": false,
+    "height": 0.5,
+    "weight": 17.5,
+    "hp": 45,
+    "attack": 55,
+    "defense": 50,
+    "specialAttack": 55,
+    "specialDefense": 55,
+    "speed": 50,
+    "baseTotal": 305,
+    "spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/6.png",
+    "types": {
+      "connectOrCreate": [
+        {
+          "where": {
+            "name": "Poison"
+          }
+        }
+      ]
+    },
+    "abilities": {
+      "connectOrCreate": [
+        {
+          "where": {
+            "name": "Shield Dust"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "pokedexNumber": 7,
+    "name": "Squirtle",
+    "classification": "Pok\u00e9mon",
+    "generation": 1,
+    "isLegendary": false,
+    "height": 0.8,
+    "weight": 20.0,
+    "hp": 46,
+    "attack": 56,
+    "defense": 51,
+    "specialAttack": 56,
+    "specialDefense": 56,
+    "speed": 51,
+    "baseTotal": 306,
+    "spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/7.png",
+    "types": {
+      "connectOrCreate": [
+        {
+          "where": {
+            "name": "Ground"
+          }
+        }
+      ]
+    },
+    "abilities": {
+      "connectOrCreate": [
+        {
+          "where": {
+            "name": "Overgrow"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "pokedexNumber": 8,
+    "name": "Wartortle",
+    "classification": "Pok\u00e9mon",
+    "generation": 1,
+    "isLegendary": false,
+    "height": 1.1,
+    "weight": 22.5,
+    "hp": 47,
+    "attack": 57,
+    "defense": 52,
+    "specialAttack": 57,
+    "specialDefense": 57,
+    "speed": 52,
+    "baseTotal": 307,
+    "spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/8.png",
+    "types": {
+      "connectOrCreate": [
+        {
+          "where": {
+            "name": "Flying"
+          }
+        }
+      ]
+    },
+    "abilities": {
+      "connectOrCreate": [
+        {
+          "where": {
+            "name": "Blaze"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "pokedexNumber": 9,
+    "name": "Blastoise",
+    "classification": "Pok\u00e9mon",
+    "generation": 1,
+    "isLegendary": false,
+    "height": 1.4,
+    "weight": 25.0,
+    "hp": 48,
+    "attack": 58,
+    "defense": 53,
+    "specialAttack": 58,
+    "specialDefense": 58,
+    "speed": 53,
+    "baseTotal": 308,
+    "spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/9.png",
+    "types": {
+      "connectOrCreate": [
+        {
+          "where": {
+            "name": "Grass"
+          }
+        }
+      ]
+    },
+    "abilities": {
+      "connectOrCreate": [
+        {
+          "where": {
+            "name": "Torrent"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "pokedexNumber": 10,
+    "name": "Caterpie",
+    "classification": "Pok\u00e9mon",
+    "generation": 1,
+    "isLegendary": false,
+    "height": 1.7,
+    "weight": 27.5,
+    "hp": 49,
+    "attack": 59,
+    "defense": 54,
+    "specialAttack": 59,
+    "specialDefense": 59,
+    "speed": 54,
+    "baseTotal": 309,
+    "spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10.png",
+    "types": {
+      "connectOrCreate": [
+        {
+          "where": {
+            "name": "Fire"
+          }
+        }
+      ]
+    },
+    "abilities": {
+      "connectOrCreate": [
+        {
+          "where": {
+            "name": "Static"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "pokedexNumber": 11,
+    "name": "Metapod",
+    "classification": "Pok\u00e9mon",
+    "generation": 1,
+    "isLegendary": false,
+    "height": 0.5,
+    "weight": 5.0,
+    "hp": 50,
+    "attack": 60,
+    "defense": 55,
+    "specialAttack": 60,
+    "specialDefense": 60,
+    "speed": 55,
+    "baseTotal": 310,
+    "spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/11.png",
+    "types": {
+      "connectOrCreate": [
+        {
+          "where": {
+            "name": "Water"
+          }
+        }
+      ]
+    },
+    "abilities": {
+      "connectOrCreate": [
+        {
+          "where": {
+            "name": "Run Away"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "pokedexNumber": 12,
+    "name": "Butterfree",
+    "classification": "Pok\u00e9mon",
+    "generation": 1,
+    "isLegendary": false,
+    "height": 0.8,
+    "weight": 7.5,
+    "hp": 51,
+    "attack": 61,
+    "defense": 56,
+    "specialAttack": 61,
+    "specialDefense": 61,
+    "speed": 56,
+    "baseTotal": 311,
+    "spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/12.png",
+    "types": {
+      "connectOrCreate": [
+        {
+          "where": {
+            "name": "Electric"
+          }
+        }
+      ]
+    },
+    "abilities": {
+      "connectOrCreate": [
+        {
+          "where": {
+            "name": "Shield Dust"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "pokedexNumber": 13,
+    "name": "Weedle",
+    "classification": "Pok\u00e9mon",
+    "generation": 1,
+    "isLegendary": false,
+    "height": 1.1,
+    "weight": 10.0,
+    "hp": 52,
+    "attack": 62,
+    "defense": 57,
+    "specialAttack": 62,
+    "specialDefense": 62,
+    "speed": 57,
+    "baseTotal": 312,
+    "spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/13.png",
+    "types": {
+      "connectOrCreate": [
+        {
+          "where": {
+            "name": "Normal"
+          }
+        }
+      ]
+    },
+    "abilities": {
+      "connectOrCreate": [
+        {
+          "where": {
+            "name": "Overgrow"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "pokedexNumber": 14,
+    "name": "Kakuna",
+    "classification": "Pok\u00e9mon",
+    "generation": 1,
+    "isLegendary": false,
+    "height": 1.4,
+    "weight": 12.5,
+    "hp": 53,
+    "attack": 63,
+    "defense": 58,
+    "specialAttack": 63,
+    "specialDefense": 63,
+    "speed": 58,
+    "baseTotal": 313,
+    "spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/14.png",
+    "types": {
+      "connectOrCreate": [
+        {
+          "where": {
+            "name": "Poison"
+          }
+        }
+      ]
+    },
+    "abilities": {
+      "connectOrCreate": [
+        {
+          "where": {
+            "name": "Blaze"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "pokedexNumber": 15,
+    "name": "Beedrill",
+    "classification": "Pok\u00e9mon",
+    "generation": 1,
+    "isLegendary": false,
+    "height": 1.7,
+    "weight": 15.0,
+    "hp": 54,
+    "attack": 64,
+    "defense": 59,
+    "specialAttack": 64,
+    "specialDefense": 64,
+    "speed": 59,
+    "baseTotal": 314,
+    "spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/15.png",
+    "types": {
+      "connectOrCreate": [
+        {
+          "where": {
+            "name": "Ground"
+          }
+        }
+      ]
+    },
+    "abilities": {
+      "connectOrCreate": [
+        {
+          "where": {
+            "name": "Torrent"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "pokedexNumber": 16,
+    "name": "Pidgey",
+    "classification": "Pok\u00e9mon",
+    "generation": 1,
+    "isLegendary": false,
+    "height": 0.5,
+    "weight": 17.5,
+    "hp": 55,
+    "attack": 65,
+    "defense": 60,
+    "specialAttack": 65,
+    "specialDefense": 65,
+    "speed": 60,
+    "baseTotal": 315,
+    "spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/16.png",
+    "types": {
+      "connectOrCreate": [
+        {
+          "where": {
+            "name": "Flying"
+          }
+        }
+      ]
+    },
+    "abilities": {
+      "connectOrCreate": [
+        {
+          "where": {
+            "name": "Static"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "pokedexNumber": 17,
+    "name": "Pidgeotto",
+    "classification": "Pok\u00e9mon",
+    "generation": 1,
+    "isLegendary": false,
+    "height": 0.8,
+    "weight": 20.0,
+    "hp": 56,
+    "attack": 66,
+    "defense": 61,
+    "specialAttack": 66,
+    "specialDefense": 66,
+    "speed": 61,
+    "baseTotal": 316,
+    "spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/17.png",
+    "types": {
+      "connectOrCreate": [
+        {
+          "where": {
+            "name": "Grass"
+          }
+        }
+      ]
+    },
+    "abilities": {
+      "connectOrCreate": [
+        {
+          "where": {
+            "name": "Run Away"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "pokedexNumber": 18,
+    "name": "Pidgeot",
+    "classification": "Pok\u00e9mon",
+    "generation": 1,
+    "isLegendary": false,
+    "height": 1.1,
+    "weight": 22.5,
+    "hp": 57,
+    "attack": 67,
+    "defense": 62,
+    "specialAttack": 67,
+    "specialDefense": 67,
+    "speed": 62,
+    "baseTotal": 317,
+    "spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/18.png",
+    "types": {
+      "connectOrCreate": [
+        {
+          "where": {
+            "name": "Fire"
+          }
+        }
+      ]
+    },
+    "abilities": {
+      "connectOrCreate": [
+        {
+          "where": {
+            "name": "Shield Dust"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "pokedexNumber": 19,
+    "name": "Rattata",
+    "classification": "Pok\u00e9mon",
+    "generation": 1,
+    "isLegendary": false,
+    "height": 1.4,
+    "weight": 25.0,
+    "hp": 58,
+    "attack": 68,
+    "defense": 63,
+    "specialAttack": 68,
+    "specialDefense": 68,
+    "speed": 63,
+    "baseTotal": 318,
+    "spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/19.png",
+    "types": {
+      "connectOrCreate": [
+        {
+          "where": {
+            "name": "Water"
+          }
+        }
+      ]
+    },
+    "abilities": {
+      "connectOrCreate": [
+        {
+          "where": {
+            "name": "Overgrow"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "pokedexNumber": 20,
+    "name": "Raticate",
+    "classification": "Pok\u00e9mon",
+    "generation": 1,
+    "isLegendary": false,
+    "height": 1.7,
+    "weight": 27.5,
+    "hp": 59,
+    "attack": 69,
+    "defense": 64,
+    "specialAttack": 69,
+    "specialDefense": 69,
+    "speed": 64,
+    "baseTotal": 319,
+    "spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/20.png",
+    "types": {
+      "connectOrCreate": [
+        {
+          "where": {
+            "name": "Electric"
+          }
+        }
+      ]
+    },
+    "abilities": {
+      "connectOrCreate": [
+        {
+          "where": {
+            "name": "Blaze"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "pokedexNumber": 21,
+    "name": "Spearow",
+    "classification": "Pok\u00e9mon",
+    "generation": 1,
+    "isLegendary": false,
+    "height": 0.5,
+    "weight": 5.0,
+    "hp": 60,
+    "attack": 70,
+    "defense": 65,
+    "specialAttack": 70,
+    "specialDefense": 70,
+    "speed": 65,
+    "baseTotal": 320,
+    "spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/21.png",
+    "types": {
+      "connectOrCreate": [
+        {
+          "where": {
+            "name": "Normal"
+          }
+        }
+      ]
+    },
+    "abilities": {
+      "connectOrCreate": [
+        {
+          "where": {
+            "name": "Torrent"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "pokedexNumber": 22,
+    "name": "Fearow",
+    "classification": "Pok\u00e9mon",
+    "generation": 1,
+    "isLegendary": false,
+    "height": 0.8,
+    "weight": 7.5,
+    "hp": 61,
+    "attack": 71,
+    "defense": 66,
+    "specialAttack": 71,
+    "specialDefense": 71,
+    "speed": 66,
+    "baseTotal": 321,
+    "spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/22.png",
+    "types": {
+      "connectOrCreate": [
+        {
+          "where": {
+            "name": "Poison"
+          }
+        }
+      ]
+    },
+    "abilities": {
+      "connectOrCreate": [
+        {
+          "where": {
+            "name": "Static"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "pokedexNumber": 23,
+    "name": "Ekans",
+    "classification": "Pok\u00e9mon",
+    "generation": 1,
+    "isLegendary": false,
+    "height": 1.1,
+    "weight": 10.0,
+    "hp": 62,
+    "attack": 72,
+    "defense": 67,
+    "specialAttack": 72,
+    "specialDefense": 72,
+    "speed": 67,
+    "baseTotal": 322,
+    "spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/23.png",
+    "types": {
+      "connectOrCreate": [
+        {
+          "where": {
+            "name": "Ground"
+          }
+        }
+      ]
+    },
+    "abilities": {
+      "connectOrCreate": [
+        {
+          "where": {
+            "name": "Run Away"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "pokedexNumber": 24,
+    "name": "Arbok",
+    "classification": "Pok\u00e9mon",
+    "generation": 1,
+    "isLegendary": false,
+    "height": 1.4,
+    "weight": 12.5,
+    "hp": 63,
+    "attack": 73,
+    "defense": 68,
+    "specialAttack": 73,
+    "specialDefense": 73,
+    "speed": 68,
+    "baseTotal": 323,
+    "spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/24.png",
+    "types": {
+      "connectOrCreate": [
+        {
+          "where": {
+            "name": "Flying"
+          }
+        }
+      ]
+    },
+    "abilities": {
+      "connectOrCreate": [
+        {
+          "where": {
+            "name": "Shield Dust"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "pokedexNumber": 25,
+    "name": "Pikachu",
+    "classification": "Pok\u00e9mon",
+    "generation": 1,
+    "isLegendary": false,
+    "height": 1.7,
+    "weight": 15.0,
+    "hp": 64,
+    "attack": 74,
+    "defense": 69,
+    "specialAttack": 74,
+    "specialDefense": 74,
+    "speed": 69,
+    "baseTotal": 324,
+    "spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/25.png",
+    "types": {
+      "connectOrCreate": [
+        {
+          "where": {
+            "name": "Grass"
+          }
+        }
+      ]
+    },
+    "abilities": {
+      "connectOrCreate": [
+        {
+          "where": {
+            "name": "Overgrow"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "pokedexNumber": 26,
+    "name": "Raichu",
+    "classification": "Pok\u00e9mon",
+    "generation": 1,
+    "isLegendary": false,
+    "height": 0.5,
+    "weight": 17.5,
+    "hp": 65,
+    "attack": 75,
+    "defense": 70,
+    "specialAttack": 75,
+    "specialDefense": 75,
+    "speed": 70,
+    "baseTotal": 325,
+    "spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/26.png",
+    "types": {
+      "connectOrCreate": [
+        {
+          "where": {
+            "name": "Fire"
+          }
+        }
+      ]
+    },
+    "abilities": {
+      "connectOrCreate": [
+        {
+          "where": {
+            "name": "Blaze"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "pokedexNumber": 27,
+    "name": "Sandshrew",
+    "classification": "Pok\u00e9mon",
+    "generation": 1,
+    "isLegendary": false,
+    "height": 0.8,
+    "weight": 20.0,
+    "hp": 66,
+    "attack": 76,
+    "defense": 71,
+    "specialAttack": 76,
+    "specialDefense": 76,
+    "speed": 71,
+    "baseTotal": 326,
+    "spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/27.png",
+    "types": {
+      "connectOrCreate": [
+        {
+          "where": {
+            "name": "Water"
+          }
+        }
+      ]
+    },
+    "abilities": {
+      "connectOrCreate": [
+        {
+          "where": {
+            "name": "Torrent"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "pokedexNumber": 28,
+    "name": "Sandslash",
+    "classification": "Pok\u00e9mon",
+    "generation": 1,
+    "isLegendary": false,
+    "height": 1.1,
+    "weight": 22.5,
+    "hp": 67,
+    "attack": 77,
+    "defense": 72,
+    "specialAttack": 77,
+    "specialDefense": 77,
+    "speed": 72,
+    "baseTotal": 327,
+    "spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/28.png",
+    "types": {
+      "connectOrCreate": [
+        {
+          "where": {
+            "name": "Electric"
+          }
+        }
+      ]
+    },
+    "abilities": {
+      "connectOrCreate": [
+        {
+          "where": {
+            "name": "Static"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "pokedexNumber": 29,
+    "name": "Nidoran-f",
+    "classification": "Pok\u00e9mon",
+    "generation": 1,
+    "isLegendary": false,
+    "height": 1.4,
+    "weight": 25.0,
+    "hp": 68,
+    "attack": 78,
+    "defense": 73,
+    "specialAttack": 78,
+    "specialDefense": 78,
+    "speed": 73,
+    "baseTotal": 328,
+    "spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/29.png",
+    "types": {
+      "connectOrCreate": [
+        {
+          "where": {
+            "name": "Normal"
+          }
+        }
+      ]
+    },
+    "abilities": {
+      "connectOrCreate": [
+        {
+          "where": {
+            "name": "Run Away"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "pokedexNumber": 30,
+    "name": "Nidorina",
+    "classification": "Pok\u00e9mon",
+    "generation": 1,
+    "isLegendary": false,
+    "height": 1.7,
+    "weight": 27.5,
+    "hp": 69,
+    "attack": 79,
+    "defense": 74,
+    "specialAttack": 79,
+    "specialDefense": 79,
+    "speed": 74,
+    "baseTotal": 329,
+    "spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/30.png",
+    "types": {
+      "connectOrCreate": [
+        {
+          "where": {
+            "name": "Poison"
+          }
+        }
+      ]
+    },
+    "abilities": {
+      "connectOrCreate": [
+        {
+          "where": {
+            "name": "Shield Dust"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "pokedexNumber": 31,
+    "name": "Nidoqueen",
+    "classification": "Pok\u00e9mon",
+    "generation": 1,
+    "isLegendary": false,
+    "height": 0.5,
+    "weight": 5.0,
+    "hp": 70,
+    "attack": 80,
+    "defense": 75,
+    "specialAttack": 80,
+    "specialDefense": 80,
+    "speed": 75,
+    "baseTotal": 330,
+    "spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/31.png",
+    "types": {
+      "connectOrCreate": [
+        {
+          "where": {
+            "name": "Ground"
+          }
+        }
+      ]
+    },
+    "abilities": {
+      "connectOrCreate": [
+        {
+          "where": {
+            "name": "Overgrow"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "pokedexNumber": 32,
+    "name": "Nidoran-m",
+    "classification": "Pok\u00e9mon",
+    "generation": 1,
+    "isLegendary": false,
+    "height": 0.8,
+    "weight": 7.5,
+    "hp": 71,
+    "attack": 81,
+    "defense": 76,
+    "specialAttack": 81,
+    "specialDefense": 81,
+    "speed": 76,
+    "baseTotal": 331,
+    "spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/32.png",
+    "types": {
+      "connectOrCreate": [
+        {
+          "where": {
+            "name": "Flying"
+          }
+        }
+      ]
+    },
+    "abilities": {
+      "connectOrCreate": [
+        {
+          "where": {
+            "name": "Blaze"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "pokedexNumber": 33,
+    "name": "Nidorino",
+    "classification": "Pok\u00e9mon",
+    "generation": 1,
+    "isLegendary": false,
+    "height": 1.1,
+    "weight": 10.0,
+    "hp": 72,
+    "attack": 82,
+    "defense": 77,
+    "specialAttack": 82,
+    "specialDefense": 82,
+    "speed": 77,
+    "baseTotal": 332,
+    "spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/33.png",
+    "types": {
+      "connectOrCreate": [
+        {
+          "where": {
+            "name": "Grass"
+          }
+        }
+      ]
+    },
+    "abilities": {
+      "connectOrCreate": [
+        {
+          "where": {
+            "name": "Torrent"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "pokedexNumber": 34,
+    "name": "Nidoking",
+    "classification": "Pok\u00e9mon",
+    "generation": 1,
+    "isLegendary": false,
+    "height": 1.4,
+    "weight": 12.5,
+    "hp": 73,
+    "attack": 83,
+    "defense": 78,
+    "specialAttack": 83,
+    "specialDefense": 83,
+    "speed": 78,
+    "baseTotal": 333,
+    "spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/34.png",
+    "types": {
+      "connectOrCreate": [
+        {
+          "where": {
+            "name": "Fire"
+          }
+        }
+      ]
+    },
+    "abilities": {
+      "connectOrCreate": [
+        {
+          "where": {
+            "name": "Static"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "pokedexNumber": 35,
+    "name": "Clefairy",
+    "classification": "Pok\u00e9mon",
+    "generation": 1,
+    "isLegendary": false,
+    "height": 1.7,
+    "weight": 15.0,
+    "hp": 74,
+    "attack": 84,
+    "defense": 79,
+    "specialAttack": 84,
+    "specialDefense": 84,
+    "speed": 79,
+    "baseTotal": 334,
+    "spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/35.png",
+    "types": {
+      "connectOrCreate": [
+        {
+          "where": {
+            "name": "Water"
+          }
+        }
+      ]
+    },
+    "abilities": {
+      "connectOrCreate": [
+        {
+          "where": {
+            "name": "Run Away"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "pokedexNumber": 36,
+    "name": "Clefable",
+    "classification": "Pok\u00e9mon",
+    "generation": 1,
+    "isLegendary": false,
+    "height": 0.5,
+    "weight": 17.5,
+    "hp": 75,
+    "attack": 85,
+    "defense": 80,
+    "specialAttack": 85,
+    "specialDefense": 85,
+    "speed": 80,
+    "baseTotal": 335,
+    "spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/36.png",
+    "types": {
+      "connectOrCreate": [
+        {
+          "where": {
+            "name": "Electric"
+          }
+        }
+      ]
+    },
+    "abilities": {
+      "connectOrCreate": [
+        {
+          "where": {
+            "name": "Shield Dust"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "pokedexNumber": 37,
+    "name": "Vulpix",
+    "classification": "Pok\u00e9mon",
+    "generation": 1,
+    "isLegendary": false,
+    "height": 0.8,
+    "weight": 20.0,
+    "hp": 76,
+    "attack": 86,
+    "defense": 81,
+    "specialAttack": 86,
+    "specialDefense": 86,
+    "speed": 81,
+    "baseTotal": 336,
+    "spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/37.png",
+    "types": {
+      "connectOrCreate": [
+        {
+          "where": {
+            "name": "Normal"
+          }
+        }
+      ]
+    },
+    "abilities": {
+      "connectOrCreate": [
+        {
+          "where": {
+            "name": "Overgrow"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "pokedexNumber": 38,
+    "name": "Ninetales",
+    "classification": "Pok\u00e9mon",
+    "generation": 1,
+    "isLegendary": false,
+    "height": 1.1,
+    "weight": 22.5,
+    "hp": 77,
+    "attack": 87,
+    "defense": 82,
+    "specialAttack": 87,
+    "specialDefense": 87,
+    "speed": 82,
+    "baseTotal": 337,
+    "spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/38.png",
+    "types": {
+      "connectOrCreate": [
+        {
+          "where": {
+            "name": "Poison"
+          }
+        }
+      ]
+    },
+    "abilities": {
+      "connectOrCreate": [
+        {
+          "where": {
+            "name": "Blaze"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "pokedexNumber": 39,
+    "name": "Jigglypuff",
+    "classification": "Pok\u00e9mon",
+    "generation": 1,
+    "isLegendary": false,
+    "height": 1.4,
+    "weight": 25.0,
+    "hp": 78,
+    "attack": 88,
+    "defense": 83,
+    "specialAttack": 88,
+    "specialDefense": 88,
+    "speed": 83,
+    "baseTotal": 338,
+    "spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/39.png",
+    "types": {
+      "connectOrCreate": [
+        {
+          "where": {
+            "name": "Ground"
+          }
+        }
+      ]
+    },
+    "abilities": {
+      "connectOrCreate": [
+        {
+          "where": {
+            "name": "Torrent"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "pokedexNumber": 40,
+    "name": "Wigglytuff",
+    "classification": "Pok\u00e9mon",
+    "generation": 1,
+    "isLegendary": false,
+    "height": 1.7,
+    "weight": 27.5,
+    "hp": 79,
+    "attack": 89,
+    "defense": 84,
+    "specialAttack": 89,
+    "specialDefense": 89,
+    "speed": 84,
+    "baseTotal": 339,
+    "spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/40.png",
+    "types": {
+      "connectOrCreate": [
+        {
+          "where": {
+            "name": "Flying"
+          }
+        }
+      ]
+    },
+    "abilities": {
+      "connectOrCreate": [
+        {
+          "where": {
+            "name": "Static"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "pokedexNumber": 41,
+    "name": "Zubat",
+    "classification": "Pok\u00e9mon",
+    "generation": 1,
+    "isLegendary": false,
+    "height": 0.5,
+    "weight": 5.0,
+    "hp": 80,
+    "attack": 90,
+    "defense": 85,
+    "specialAttack": 90,
+    "specialDefense": 90,
+    "speed": 85,
+    "baseTotal": 340,
+    "spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/41.png",
+    "types": {
+      "connectOrCreate": [
+        {
+          "where": {
+            "name": "Grass"
+          }
+        }
+      ]
+    },
+    "abilities": {
+      "connectOrCreate": [
+        {
+          "where": {
+            "name": "Run Away"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "pokedexNumber": 42,
+    "name": "Golbat",
+    "classification": "Pok\u00e9mon",
+    "generation": 1,
+    "isLegendary": false,
+    "height": 0.8,
+    "weight": 7.5,
+    "hp": 81,
+    "attack": 91,
+    "defense": 86,
+    "specialAttack": 91,
+    "specialDefense": 91,
+    "speed": 86,
+    "baseTotal": 341,
+    "spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/42.png",
+    "types": {
+      "connectOrCreate": [
+        {
+          "where": {
+            "name": "Fire"
+          }
+        }
+      ]
+    },
+    "abilities": {
+      "connectOrCreate": [
+        {
+          "where": {
+            "name": "Shield Dust"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "pokedexNumber": 43,
+    "name": "Oddish",
+    "classification": "Pok\u00e9mon",
+    "generation": 1,
+    "isLegendary": false,
+    "height": 1.1,
+    "weight": 10.0,
+    "hp": 82,
+    "attack": 92,
+    "defense": 87,
+    "specialAttack": 92,
+    "specialDefense": 92,
+    "speed": 87,
+    "baseTotal": 342,
+    "spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/43.png",
+    "types": {
+      "connectOrCreate": [
+        {
+          "where": {
+            "name": "Water"
+          }
+        }
+      ]
+    },
+    "abilities": {
+      "connectOrCreate": [
+        {
+          "where": {
+            "name": "Overgrow"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "pokedexNumber": 44,
+    "name": "Gloom",
+    "classification": "Pok\u00e9mon",
+    "generation": 1,
+    "isLegendary": false,
+    "height": 1.4,
+    "weight": 12.5,
+    "hp": 83,
+    "attack": 93,
+    "defense": 88,
+    "specialAttack": 93,
+    "specialDefense": 93,
+    "speed": 88,
+    "baseTotal": 343,
+    "spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/44.png",
+    "types": {
+      "connectOrCreate": [
+        {
+          "where": {
+            "name": "Electric"
+          }
+        }
+      ]
+    },
+    "abilities": {
+      "connectOrCreate": [
+        {
+          "where": {
+            "name": "Blaze"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "pokedexNumber": 45,
+    "name": "Vileplume",
+    "classification": "Pok\u00e9mon",
+    "generation": 1,
+    "isLegendary": false,
+    "height": 1.7,
+    "weight": 15.0,
+    "hp": 84,
+    "attack": 94,
+    "defense": 89,
+    "specialAttack": 94,
+    "specialDefense": 94,
+    "speed": 89,
+    "baseTotal": 344,
+    "spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/45.png",
+    "types": {
+      "connectOrCreate": [
+        {
+          "where": {
+            "name": "Normal"
+          }
+        }
+      ]
+    },
+    "abilities": {
+      "connectOrCreate": [
+        {
+          "where": {
+            "name": "Torrent"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "pokedexNumber": 46,
+    "name": "Paras",
+    "classification": "Pok\u00e9mon",
+    "generation": 1,
+    "isLegendary": false,
+    "height": 0.5,
+    "weight": 17.5,
+    "hp": 85,
+    "attack": 95,
+    "defense": 90,
+    "specialAttack": 95,
+    "specialDefense": 95,
+    "speed": 90,
+    "baseTotal": 345,
+    "spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/46.png",
+    "types": {
+      "connectOrCreate": [
+        {
+          "where": {
+            "name": "Poison"
+          }
+        }
+      ]
+    },
+    "abilities": {
+      "connectOrCreate": [
+        {
+          "where": {
+            "name": "Static"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "pokedexNumber": 47,
+    "name": "Parasect",
+    "classification": "Pok\u00e9mon",
+    "generation": 1,
+    "isLegendary": false,
+    "height": 0.8,
+    "weight": 20.0,
+    "hp": 86,
+    "attack": 96,
+    "defense": 91,
+    "specialAttack": 96,
+    "specialDefense": 96,
+    "speed": 91,
+    "baseTotal": 346,
+    "spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/47.png",
+    "types": {
+      "connectOrCreate": [
+        {
+          "where": {
+            "name": "Ground"
+          }
+        }
+      ]
+    },
+    "abilities": {
+      "connectOrCreate": [
+        {
+          "where": {
+            "name": "Run Away"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "pokedexNumber": 48,
+    "name": "Venonat",
+    "classification": "Pok\u00e9mon",
+    "generation": 1,
+    "isLegendary": false,
+    "height": 1.1,
+    "weight": 22.5,
+    "hp": 87,
+    "attack": 97,
+    "defense": 92,
+    "specialAttack": 97,
+    "specialDefense": 97,
+    "speed": 92,
+    "baseTotal": 347,
+    "spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/48.png",
+    "types": {
+      "connectOrCreate": [
+        {
+          "where": {
+            "name": "Flying"
+          }
+        }
+      ]
+    },
+    "abilities": {
+      "connectOrCreate": [
+        {
+          "where": {
+            "name": "Shield Dust"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "pokedexNumber": 49,
+    "name": "Venomoth",
+    "classification": "Pok\u00e9mon",
+    "generation": 1,
+    "isLegendary": false,
+    "height": 1.4,
+    "weight": 25.0,
+    "hp": 88,
+    "attack": 98,
+    "defense": 93,
+    "specialAttack": 98,
+    "specialDefense": 98,
+    "speed": 93,
+    "baseTotal": 348,
+    "spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/49.png",
+    "types": {
+      "connectOrCreate": [
+        {
+          "where": {
+            "name": "Grass"
+          }
+        }
+      ]
+    },
+    "abilities": {
+      "connectOrCreate": [
+        {
+          "where": {
+            "name": "Overgrow"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "pokedexNumber": 50,
+    "name": "Diglett",
+    "classification": "Pok\u00e9mon",
+    "generation": 1,
+    "isLegendary": false,
+    "height": 1.7,
+    "weight": 27.5,
+    "hp": 89,
+    "attack": 99,
+    "defense": 94,
+    "specialAttack": 99,
+    "specialDefense": 99,
+    "speed": 94,
+    "baseTotal": 349,
+    "spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/50.png",
+    "types": {
+      "connectOrCreate": [
+        {
+          "where": {
+            "name": "Fire"
+          }
+        }
+      ]
+    },
+    "abilities": {
+      "connectOrCreate": [
+        {
+          "where": {
+            "name": "Blaze"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "pokedexNumber": 51,
+    "name": "Dugtrio",
+    "classification": "Pok\u00e9mon",
+    "generation": 1,
+    "isLegendary": false,
+    "height": 0.5,
+    "weight": 5.0,
+    "hp": 90,
+    "attack": 100,
+    "defense": 95,
+    "specialAttack": 100,
+    "specialDefense": 100,
+    "speed": 95,
+    "baseTotal": 350,
+    "spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/51.png",
+    "types": {
+      "connectOrCreate": [
+        {
+          "where": {
+            "name": "Water"
+          }
+        }
+      ]
+    },
+    "abilities": {
+      "connectOrCreate": [
+        {
+          "where": {
+            "name": "Torrent"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "pokedexNumber": 52,
+    "name": "Meowth",
+    "classification": "Pok\u00e9mon",
+    "generation": 1,
+    "isLegendary": false,
+    "height": 0.8,
+    "weight": 7.5,
+    "hp": 91,
+    "attack": 101,
+    "defense": 96,
+    "specialAttack": 101,
+    "specialDefense": 101,
+    "speed": 96,
+    "baseTotal": 351,
+    "spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/52.png",
+    "types": {
+      "connectOrCreate": [
+        {
+          "where": {
+            "name": "Electric"
+          }
+        }
+      ]
+    },
+    "abilities": {
+      "connectOrCreate": [
+        {
+          "where": {
+            "name": "Static"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "pokedexNumber": 53,
+    "name": "Persian",
+    "classification": "Pok\u00e9mon",
+    "generation": 1,
+    "isLegendary": false,
+    "height": 1.1,
+    "weight": 10.0,
+    "hp": 92,
+    "attack": 102,
+    "defense": 97,
+    "specialAttack": 102,
+    "specialDefense": 102,
+    "speed": 97,
+    "baseTotal": 352,
+    "spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/53.png",
+    "types": {
+      "connectOrCreate": [
+        {
+          "where": {
+            "name": "Normal"
+          }
+        }
+      ]
+    },
+    "abilities": {
+      "connectOrCreate": [
+        {
+          "where": {
+            "name": "Run Away"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "pokedexNumber": 54,
+    "name": "Psyduck",
+    "classification": "Pok\u00e9mon",
+    "generation": 1,
+    "isLegendary": false,
+    "height": 1.4,
+    "weight": 12.5,
+    "hp": 93,
+    "attack": 103,
+    "defense": 98,
+    "specialAttack": 103,
+    "specialDefense": 103,
+    "speed": 98,
+    "baseTotal": 353,
+    "spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/54.png",
+    "types": {
+      "connectOrCreate": [
+        {
+          "where": {
+            "name": "Poison"
+          }
+        }
+      ]
+    },
+    "abilities": {
+      "connectOrCreate": [
+        {
+          "where": {
+            "name": "Shield Dust"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "pokedexNumber": 55,
+    "name": "Golduck",
+    "classification": "Pok\u00e9mon",
+    "generation": 1,
+    "isLegendary": false,
+    "height": 1.7,
+    "weight": 15.0,
+    "hp": 94,
+    "attack": 104,
+    "defense": 99,
+    "specialAttack": 104,
+    "specialDefense": 104,
+    "speed": 99,
+    "baseTotal": 354,
+    "spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/55.png",
+    "types": {
+      "connectOrCreate": [
+        {
+          "where": {
+            "name": "Ground"
+          }
+        }
+      ]
+    },
+    "abilities": {
+      "connectOrCreate": [
+        {
+          "where": {
+            "name": "Overgrow"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "pokedexNumber": 56,
+    "name": "Mankey",
+    "classification": "Pok\u00e9mon",
+    "generation": 1,
+    "isLegendary": false,
+    "height": 0.5,
+    "weight": 17.5,
+    "hp": 95,
+    "attack": 105,
+    "defense": 100,
+    "specialAttack": 105,
+    "specialDefense": 105,
+    "speed": 100,
+    "baseTotal": 355,
+    "spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/56.png",
+    "types": {
+      "connectOrCreate": [
+        {
+          "where": {
+            "name": "Flying"
+          }
+        }
+      ]
+    },
+    "abilities": {
+      "connectOrCreate": [
+        {
+          "where": {
+            "name": "Blaze"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "pokedexNumber": 57,
+    "name": "Primeape",
+    "classification": "Pok\u00e9mon",
+    "generation": 1,
+    "isLegendary": false,
+    "height": 0.8,
+    "weight": 20.0,
+    "hp": 96,
+    "attack": 106,
+    "defense": 101,
+    "specialAttack": 106,
+    "specialDefense": 106,
+    "speed": 101,
+    "baseTotal": 356,
+    "spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/57.png",
+    "types": {
+      "connectOrCreate": [
+        {
+          "where": {
+            "name": "Grass"
+          }
+        }
+      ]
+    },
+    "abilities": {
+      "connectOrCreate": [
+        {
+          "where": {
+            "name": "Torrent"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "pokedexNumber": 58,
+    "name": "Growlithe",
+    "classification": "Pok\u00e9mon",
+    "generation": 1,
+    "isLegendary": false,
+    "height": 1.1,
+    "weight": 22.5,
+    "hp": 97,
+    "attack": 107,
+    "defense": 102,
+    "specialAttack": 107,
+    "specialDefense": 107,
+    "speed": 102,
+    "baseTotal": 357,
+    "spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/58.png",
+    "types": {
+      "connectOrCreate": [
+        {
+          "where": {
+            "name": "Fire"
+          }
+        }
+      ]
+    },
+    "abilities": {
+      "connectOrCreate": [
+        {
+          "where": {
+            "name": "Static"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "pokedexNumber": 59,
+    "name": "Arcanine",
+    "classification": "Pok\u00e9mon",
+    "generation": 1,
+    "isLegendary": false,
+    "height": 1.4,
+    "weight": 25.0,
+    "hp": 98,
+    "attack": 108,
+    "defense": 103,
+    "specialAttack": 108,
+    "specialDefense": 108,
+    "speed": 103,
+    "baseTotal": 358,
+    "spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/59.png",
+    "types": {
+      "connectOrCreate": [
+        {
+          "where": {
+            "name": "Water"
+          }
+        }
+      ]
+    },
+    "abilities": {
+      "connectOrCreate": [
+        {
+          "where": {
+            "name": "Run Away"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "pokedexNumber": 60,
+    "name": "Poliwag",
+    "classification": "Pok\u00e9mon",
+    "generation": 1,
+    "isLegendary": false,
+    "height": 1.7,
+    "weight": 27.5,
+    "hp": 99,
+    "attack": 109,
+    "defense": 104,
+    "specialAttack": 109,
+    "specialDefense": 109,
+    "speed": 104,
+    "baseTotal": 359,
+    "spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/60.png",
+    "types": {
+      "connectOrCreate": [
+        {
+          "where": {
+            "name": "Electric"
+          }
+        }
+      ]
+    },
+    "abilities": {
+      "connectOrCreate": [
+        {
+          "where": {
+            "name": "Shield Dust"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "pokedexNumber": 61,
+    "name": "Poliwhirl",
+    "classification": "Pok\u00e9mon",
+    "generation": 1,
+    "isLegendary": false,
+    "height": 0.5,
+    "weight": 5.0,
+    "hp": 40,
+    "attack": 110,
+    "defense": 105,
+    "specialAttack": 110,
+    "specialDefense": 110,
+    "speed": 105,
+    "baseTotal": 360,
+    "spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/61.png",
+    "types": {
+      "connectOrCreate": [
+        {
+          "where": {
+            "name": "Normal"
+          }
+        }
+      ]
+    },
+    "abilities": {
+      "connectOrCreate": [
+        {
+          "where": {
+            "name": "Overgrow"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "pokedexNumber": 62,
+    "name": "Poliwrath",
+    "classification": "Pok\u00e9mon",
+    "generation": 1,
+    "isLegendary": false,
+    "height": 0.8,
+    "weight": 7.5,
+    "hp": 41,
+    "attack": 111,
+    "defense": 106,
+    "specialAttack": 111,
+    "specialDefense": 111,
+    "speed": 106,
+    "baseTotal": 361,
+    "spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/62.png",
+    "types": {
+      "connectOrCreate": [
+        {
+          "where": {
+            "name": "Poison"
+          }
+        }
+      ]
+    },
+    "abilities": {
+      "connectOrCreate": [
+        {
+          "where": {
+            "name": "Blaze"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "pokedexNumber": 63,
+    "name": "Abra",
+    "classification": "Pok\u00e9mon",
+    "generation": 1,
+    "isLegendary": false,
+    "height": 1.1,
+    "weight": 10.0,
+    "hp": 42,
+    "attack": 112,
+    "defense": 107,
+    "specialAttack": 112,
+    "specialDefense": 112,
+    "speed": 107,
+    "baseTotal": 362,
+    "spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/63.png",
+    "types": {
+      "connectOrCreate": [
+        {
+          "where": {
+            "name": "Ground"
+          }
+        }
+      ]
+    },
+    "abilities": {
+      "connectOrCreate": [
+        {
+          "where": {
+            "name": "Torrent"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "pokedexNumber": 64,
+    "name": "Kadabra",
+    "classification": "Pok\u00e9mon",
+    "generation": 1,
+    "isLegendary": false,
+    "height": 1.4,
+    "weight": 12.5,
+    "hp": 43,
+    "attack": 113,
+    "defense": 108,
+    "specialAttack": 113,
+    "specialDefense": 113,
+    "speed": 108,
+    "baseTotal": 363,
+    "spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/64.png",
+    "types": {
+      "connectOrCreate": [
+        {
+          "where": {
+            "name": "Flying"
+          }
+        }
+      ]
+    },
+    "abilities": {
+      "connectOrCreate": [
+        {
+          "where": {
+            "name": "Static"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "pokedexNumber": 65,
+    "name": "Alakazam",
+    "classification": "Pok\u00e9mon",
+    "generation": 1,
+    "isLegendary": false,
+    "height": 1.7,
+    "weight": 15.0,
+    "hp": 44,
+    "attack": 114,
+    "defense": 109,
+    "specialAttack": 114,
+    "specialDefense": 114,
+    "speed": 109,
+    "baseTotal": 364,
+    "spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/65.png",
+    "types": {
+      "connectOrCreate": [
+        {
+          "where": {
+            "name": "Grass"
+          }
+        }
+      ]
+    },
+    "abilities": {
+      "connectOrCreate": [
+        {
+          "where": {
+            "name": "Run Away"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "pokedexNumber": 66,
+    "name": "Machop",
+    "classification": "Pok\u00e9mon",
+    "generation": 1,
+    "isLegendary": false,
+    "height": 0.5,
+    "weight": 17.5,
+    "hp": 45,
+    "attack": 115,
+    "defense": 45,
+    "specialAttack": 115,
+    "specialDefense": 115,
+    "speed": 110,
+    "baseTotal": 365,
+    "spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/66.png",
+    "types": {
+      "connectOrCreate": [
+        {
+          "where": {
+            "name": "Fire"
+          }
+        }
+      ]
+    },
+    "abilities": {
+      "connectOrCreate": [
+        {
+          "where": {
+            "name": "Shield Dust"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "pokedexNumber": 67,
+    "name": "Machoke",
+    "classification": "Pok\u00e9mon",
+    "generation": 1,
+    "isLegendary": false,
+    "height": 0.8,
+    "weight": 20.0,
+    "hp": 46,
+    "attack": 116,
+    "defense": 46,
+    "specialAttack": 116,
+    "specialDefense": 116,
+    "speed": 111,
+    "baseTotal": 366,
+    "spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/67.png",
+    "types": {
+      "connectOrCreate": [
+        {
+          "where": {
+            "name": "Water"
+          }
+        }
+      ]
+    },
+    "abilities": {
+      "connectOrCreate": [
+        {
+          "where": {
+            "name": "Overgrow"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "pokedexNumber": 68,
+    "name": "Machamp",
+    "classification": "Pok\u00e9mon",
+    "generation": 1,
+    "isLegendary": false,
+    "height": 1.1,
+    "weight": 22.5,
+    "hp": 47,
+    "attack": 117,
+    "defense": 47,
+    "specialAttack": 117,
+    "specialDefense": 117,
+    "speed": 112,
+    "baseTotal": 367,
+    "spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/68.png",
+    "types": {
+      "connectOrCreate": [
+        {
+          "where": {
+            "name": "Electric"
+          }
+        }
+      ]
+    },
+    "abilities": {
+      "connectOrCreate": [
+        {
+          "where": {
+            "name": "Blaze"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "pokedexNumber": 69,
+    "name": "Bellsprout",
+    "classification": "Pok\u00e9mon",
+    "generation": 1,
+    "isLegendary": false,
+    "height": 1.4,
+    "weight": 25.0,
+    "hp": 48,
+    "attack": 118,
+    "defense": 48,
+    "specialAttack": 118,
+    "specialDefense": 118,
+    "speed": 113,
+    "baseTotal": 368,
+    "spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/69.png",
+    "types": {
+      "connectOrCreate": [
+        {
+          "where": {
+            "name": "Normal"
+          }
+        }
+      ]
+    },
+    "abilities": {
+      "connectOrCreate": [
+        {
+          "where": {
+            "name": "Torrent"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "pokedexNumber": 70,
+    "name": "Weepinbell",
+    "classification": "Pok\u00e9mon",
+    "generation": 1,
+    "isLegendary": false,
+    "height": 1.7,
+    "weight": 27.5,
+    "hp": 49,
+    "attack": 119,
+    "defense": 49,
+    "specialAttack": 119,
+    "specialDefense": 119,
+    "speed": 114,
+    "baseTotal": 369,
+    "spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/70.png",
+    "types": {
+      "connectOrCreate": [
+        {
+          "where": {
+            "name": "Poison"
+          }
+        }
+      ]
+    },
+    "abilities": {
+      "connectOrCreate": [
+        {
+          "where": {
+            "name": "Static"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "pokedexNumber": 71,
+    "name": "Victreebel",
+    "classification": "Pok\u00e9mon",
+    "generation": 1,
+    "isLegendary": false,
+    "height": 0.5,
+    "weight": 5.0,
+    "hp": 50,
+    "attack": 50,
+    "defense": 50,
+    "specialAttack": 120,
+    "specialDefense": 120,
+    "speed": 115,
+    "baseTotal": 370,
+    "spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/71.png",
+    "types": {
+      "connectOrCreate": [
+        {
+          "where": {
+            "name": "Ground"
+          }
+        }
+      ]
+    },
+    "abilities": {
+      "connectOrCreate": [
+        {
+          "where": {
+            "name": "Run Away"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "pokedexNumber": 72,
+    "name": "Tentacool",
+    "classification": "Pok\u00e9mon",
+    "generation": 1,
+    "isLegendary": false,
+    "height": 0.8,
+    "weight": 7.5,
+    "hp": 51,
+    "attack": 51,
+    "defense": 51,
+    "specialAttack": 121,
+    "specialDefense": 121,
+    "speed": 116,
+    "baseTotal": 371,
+    "spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/72.png",
+    "types": {
+      "connectOrCreate": [
+        {
+          "where": {
+            "name": "Flying"
+          }
+        }
+      ]
+    },
+    "abilities": {
+      "connectOrCreate": [
+        {
+          "where": {
+            "name": "Shield Dust"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "pokedexNumber": 73,
+    "name": "Tentacruel",
+    "classification": "Pok\u00e9mon",
+    "generation": 1,
+    "isLegendary": false,
+    "height": 1.1,
+    "weight": 10.0,
+    "hp": 52,
+    "attack": 52,
+    "defense": 52,
+    "specialAttack": 122,
+    "specialDefense": 122,
+    "speed": 117,
+    "baseTotal": 372,
+    "spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/73.png",
+    "types": {
+      "connectOrCreate": [
+        {
+          "where": {
+            "name": "Grass"
+          }
+        }
+      ]
+    },
+    "abilities": {
+      "connectOrCreate": [
+        {
+          "where": {
+            "name": "Overgrow"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "pokedexNumber": 74,
+    "name": "Geodude",
+    "classification": "Pok\u00e9mon",
+    "generation": 1,
+    "isLegendary": false,
+    "height": 1.4,
+    "weight": 12.5,
+    "hp": 53,
+    "attack": 53,
+    "defense": 53,
+    "specialAttack": 123,
+    "specialDefense": 123,
+    "speed": 118,
+    "baseTotal": 373,
+    "spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/74.png",
+    "types": {
+      "connectOrCreate": [
+        {
+          "where": {
+            "name": "Fire"
+          }
+        }
+      ]
+    },
+    "abilities": {
+      "connectOrCreate": [
+        {
+          "where": {
+            "name": "Blaze"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "pokedexNumber": 75,
+    "name": "Graveler",
+    "classification": "Pok\u00e9mon",
+    "generation": 1,
+    "isLegendary": false,
+    "height": 1.7,
+    "weight": 15.0,
+    "hp": 54,
+    "attack": 54,
+    "defense": 54,
+    "specialAttack": 124,
+    "specialDefense": 124,
+    "speed": 119,
+    "baseTotal": 374,
+    "spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/75.png",
+    "types": {
+      "connectOrCreate": [
+        {
+          "where": {
+            "name": "Water"
+          }
+        }
+      ]
+    },
+    "abilities": {
+      "connectOrCreate": [
+        {
+          "where": {
+            "name": "Torrent"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "pokedexNumber": 76,
+    "name": "Golem",
+    "classification": "Pok\u00e9mon",
+    "generation": 1,
+    "isLegendary": false,
+    "height": 0.5,
+    "weight": 17.5,
+    "hp": 55,
+    "attack": 55,
+    "defense": 55,
+    "specialAttack": 50,
+    "specialDefense": 50,
+    "speed": 120,
+    "baseTotal": 375,
+    "spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/76.png",
+    "types": {
+      "connectOrCreate": [
+        {
+          "where": {
+            "name": "Electric"
+          }
+        }
+      ]
+    },
+    "abilities": {
+      "connectOrCreate": [
+        {
+          "where": {
+            "name": "Static"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "pokedexNumber": 77,
+    "name": "Ponyta",
+    "classification": "Pok\u00e9mon",
+    "generation": 1,
+    "isLegendary": false,
+    "height": 0.8,
+    "weight": 20.0,
+    "hp": 56,
+    "attack": 56,
+    "defense": 56,
+    "specialAttack": 51,
+    "specialDefense": 51,
+    "speed": 121,
+    "baseTotal": 376,
+    "spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/77.png",
+    "types": {
+      "connectOrCreate": [
+        {
+          "where": {
+            "name": "Normal"
+          }
+        }
+      ]
+    },
+    "abilities": {
+      "connectOrCreate": [
+        {
+          "where": {
+            "name": "Run Away"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "pokedexNumber": 78,
+    "name": "Rapidash",
+    "classification": "Pok\u00e9mon",
+    "generation": 1,
+    "isLegendary": false,
+    "height": 1.1,
+    "weight": 22.5,
+    "hp": 57,
+    "attack": 57,
+    "defense": 57,
+    "specialAttack": 52,
+    "specialDefense": 52,
+    "speed": 122,
+    "baseTotal": 377,
+    "spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/78.png",
+    "types": {
+      "connectOrCreate": [
+        {
+          "where": {
+            "name": "Poison"
+          }
+        }
+      ]
+    },
+    "abilities": {
+      "connectOrCreate": [
+        {
+          "where": {
+            "name": "Shield Dust"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "pokedexNumber": 79,
+    "name": "Slowpoke",
+    "classification": "Pok\u00e9mon",
+    "generation": 1,
+    "isLegendary": false,
+    "height": 1.4,
+    "weight": 25.0,
+    "hp": 58,
+    "attack": 58,
+    "defense": 58,
+    "specialAttack": 53,
+    "specialDefense": 53,
+    "speed": 123,
+    "baseTotal": 378,
+    "spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/79.png",
+    "types": {
+      "connectOrCreate": [
+        {
+          "where": {
+            "name": "Ground"
+          }
+        }
+      ]
+    },
+    "abilities": {
+      "connectOrCreate": [
+        {
+          "where": {
+            "name": "Overgrow"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "pokedexNumber": 80,
+    "name": "Slowbro",
+    "classification": "Pok\u00e9mon",
+    "generation": 1,
+    "isLegendary": false,
+    "height": 1.7,
+    "weight": 27.5,
+    "hp": 59,
+    "attack": 59,
+    "defense": 59,
+    "specialAttack": 54,
+    "specialDefense": 54,
+    "speed": 124,
+    "baseTotal": 379,
+    "spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/80.png",
+    "types": {
+      "connectOrCreate": [
+        {
+          "where": {
+            "name": "Flying"
+          }
+        }
+      ]
+    },
+    "abilities": {
+      "connectOrCreate": [
+        {
+          "where": {
+            "name": "Blaze"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "pokedexNumber": 81,
+    "name": "Magnemite",
+    "classification": "Pok\u00e9mon",
+    "generation": 1,
+    "isLegendary": false,
+    "height": 0.5,
+    "weight": 5.0,
+    "hp": 60,
+    "attack": 60,
+    "defense": 60,
+    "specialAttack": 55,
+    "specialDefense": 55,
+    "speed": 45,
+    "baseTotal": 380,
+    "spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/81.png",
+    "types": {
+      "connectOrCreate": [
+        {
+          "where": {
+            "name": "Grass"
+          }
+        }
+      ]
+    },
+    "abilities": {
+      "connectOrCreate": [
+        {
+          "where": {
+            "name": "Torrent"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "pokedexNumber": 82,
+    "name": "Magneton",
+    "classification": "Pok\u00e9mon",
+    "generation": 1,
+    "isLegendary": false,
+    "height": 0.8,
+    "weight": 7.5,
+    "hp": 61,
+    "attack": 61,
+    "defense": 61,
+    "specialAttack": 56,
+    "specialDefense": 56,
+    "speed": 46,
+    "baseTotal": 381,
+    "spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/82.png",
+    "types": {
+      "connectOrCreate": [
+        {
+          "where": {
+            "name": "Fire"
+          }
+        }
+      ]
+    },
+    "abilities": {
+      "connectOrCreate": [
+        {
+          "where": {
+            "name": "Static"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "pokedexNumber": 83,
+    "name": "Farfetch'd",
+    "classification": "Pok\u00e9mon",
+    "generation": 1,
+    "isLegendary": false,
+    "height": 1.1,
+    "weight": 10.0,
+    "hp": 62,
+    "attack": 62,
+    "defense": 62,
+    "specialAttack": 57,
+    "specialDefense": 57,
+    "speed": 47,
+    "baseTotal": 382,
+    "spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/83.png",
+    "types": {
+      "connectOrCreate": [
+        {
+          "where": {
+            "name": "Water"
+          }
+        }
+      ]
+    },
+    "abilities": {
+      "connectOrCreate": [
+        {
+          "where": {
+            "name": "Run Away"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "pokedexNumber": 84,
+    "name": "Doduo",
+    "classification": "Pok\u00e9mon",
+    "generation": 1,
+    "isLegendary": false,
+    "height": 1.4,
+    "weight": 12.5,
+    "hp": 63,
+    "attack": 63,
+    "defense": 63,
+    "specialAttack": 58,
+    "specialDefense": 58,
+    "speed": 48,
+    "baseTotal": 383,
+    "spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/84.png",
+    "types": {
+      "connectOrCreate": [
+        {
+          "where": {
+            "name": "Electric"
+          }
+        }
+      ]
+    },
+    "abilities": {
+      "connectOrCreate": [
+        {
+          "where": {
+            "name": "Shield Dust"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "pokedexNumber": 85,
+    "name": "Dodrio",
+    "classification": "Pok\u00e9mon",
+    "generation": 1,
+    "isLegendary": false,
+    "height": 1.7,
+    "weight": 15.0,
+    "hp": 64,
+    "attack": 64,
+    "defense": 64,
+    "specialAttack": 59,
+    "specialDefense": 59,
+    "speed": 49,
+    "baseTotal": 384,
+    "spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/85.png",
+    "types": {
+      "connectOrCreate": [
+        {
+          "where": {
+            "name": "Normal"
+          }
+        }
+      ]
+    },
+    "abilities": {
+      "connectOrCreate": [
+        {
+          "where": {
+            "name": "Overgrow"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "pokedexNumber": 86,
+    "name": "Seel",
+    "classification": "Pok\u00e9mon",
+    "generation": 1,
+    "isLegendary": false,
+    "height": 0.5,
+    "weight": 17.5,
+    "hp": 65,
+    "attack": 65,
+    "defense": 65,
+    "specialAttack": 60,
+    "specialDefense": 60,
+    "speed": 50,
+    "baseTotal": 385,
+    "spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/86.png",
+    "types": {
+      "connectOrCreate": [
+        {
+          "where": {
+            "name": "Poison"
+          }
+        }
+      ]
+    },
+    "abilities": {
+      "connectOrCreate": [
+        {
+          "where": {
+            "name": "Blaze"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "pokedexNumber": 87,
+    "name": "Dewgong",
+    "classification": "Pok\u00e9mon",
+    "generation": 1,
+    "isLegendary": false,
+    "height": 0.8,
+    "weight": 20.0,
+    "hp": 66,
+    "attack": 66,
+    "defense": 66,
+    "specialAttack": 61,
+    "specialDefense": 61,
+    "speed": 51,
+    "baseTotal": 386,
+    "spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/87.png",
+    "types": {
+      "connectOrCreate": [
+        {
+          "where": {
+            "name": "Ground"
+          }
+        }
+      ]
+    },
+    "abilities": {
+      "connectOrCreate": [
+        {
+          "where": {
+            "name": "Torrent"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "pokedexNumber": 88,
+    "name": "Grimer",
+    "classification": "Pok\u00e9mon",
+    "generation": 1,
+    "isLegendary": false,
+    "height": 1.1,
+    "weight": 22.5,
+    "hp": 67,
+    "attack": 67,
+    "defense": 67,
+    "specialAttack": 62,
+    "specialDefense": 62,
+    "speed": 52,
+    "baseTotal": 387,
+    "spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/88.png",
+    "types": {
+      "connectOrCreate": [
+        {
+          "where": {
+            "name": "Flying"
+          }
+        }
+      ]
+    },
+    "abilities": {
+      "connectOrCreate": [
+        {
+          "where": {
+            "name": "Static"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "pokedexNumber": 89,
+    "name": "Muk",
+    "classification": "Pok\u00e9mon",
+    "generation": 1,
+    "isLegendary": false,
+    "height": 1.4,
+    "weight": 25.0,
+    "hp": 68,
+    "attack": 68,
+    "defense": 68,
+    "specialAttack": 63,
+    "specialDefense": 63,
+    "speed": 53,
+    "baseTotal": 388,
+    "spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/89.png",
+    "types": {
+      "connectOrCreate": [
+        {
+          "where": {
+            "name": "Grass"
+          }
+        }
+      ]
+    },
+    "abilities": {
+      "connectOrCreate": [
+        {
+          "where": {
+            "name": "Run Away"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "pokedexNumber": 90,
+    "name": "Shellder",
+    "classification": "Pok\u00e9mon",
+    "generation": 1,
+    "isLegendary": false,
+    "height": 1.7,
+    "weight": 27.5,
+    "hp": 69,
+    "attack": 69,
+    "defense": 69,
+    "specialAttack": 64,
+    "specialDefense": 64,
+    "speed": 54,
+    "baseTotal": 389,
+    "spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/90.png",
+    "types": {
+      "connectOrCreate": [
+        {
+          "where": {
+            "name": "Fire"
+          }
+        }
+      ]
+    },
+    "abilities": {
+      "connectOrCreate": [
+        {
+          "where": {
+            "name": "Shield Dust"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "pokedexNumber": 91,
+    "name": "Cloyster",
+    "classification": "Pok\u00e9mon",
+    "generation": 1,
+    "isLegendary": false,
+    "height": 0.5,
+    "weight": 5.0,
+    "hp": 70,
+    "attack": 70,
+    "defense": 70,
+    "specialAttack": 65,
+    "specialDefense": 65,
+    "speed": 55,
+    "baseTotal": 390,
+    "spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/91.png",
+    "types": {
+      "connectOrCreate": [
+        {
+          "where": {
+            "name": "Water"
+          }
+        }
+      ]
+    },
+    "abilities": {
+      "connectOrCreate": [
+        {
+          "where": {
+            "name": "Overgrow"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "pokedexNumber": 92,
+    "name": "Gastly",
+    "classification": "Pok\u00e9mon",
+    "generation": 1,
+    "isLegendary": false,
+    "height": 0.8,
+    "weight": 7.5,
+    "hp": 71,
+    "attack": 71,
+    "defense": 71,
+    "specialAttack": 66,
+    "specialDefense": 66,
+    "speed": 56,
+    "baseTotal": 391,
+    "spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/92.png",
+    "types": {
+      "connectOrCreate": [
+        {
+          "where": {
+            "name": "Electric"
+          }
+        }
+      ]
+    },
+    "abilities": {
+      "connectOrCreate": [
+        {
+          "where": {
+            "name": "Blaze"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "pokedexNumber": 93,
+    "name": "Haunter",
+    "classification": "Pok\u00e9mon",
+    "generation": 1,
+    "isLegendary": false,
+    "height": 1.1,
+    "weight": 10.0,
+    "hp": 72,
+    "attack": 72,
+    "defense": 72,
+    "specialAttack": 67,
+    "specialDefense": 67,
+    "speed": 57,
+    "baseTotal": 392,
+    "spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/93.png",
+    "types": {
+      "connectOrCreate": [
+        {
+          "where": {
+            "name": "Normal"
+          }
+        }
+      ]
+    },
+    "abilities": {
+      "connectOrCreate": [
+        {
+          "where": {
+            "name": "Torrent"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "pokedexNumber": 94,
+    "name": "Gengar",
+    "classification": "Pok\u00e9mon",
+    "generation": 1,
+    "isLegendary": false,
+    "height": 1.4,
+    "weight": 12.5,
+    "hp": 73,
+    "attack": 73,
+    "defense": 73,
+    "specialAttack": 68,
+    "specialDefense": 68,
+    "speed": 58,
+    "baseTotal": 393,
+    "spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/94.png",
+    "types": {
+      "connectOrCreate": [
+        {
+          "where": {
+            "name": "Poison"
+          }
+        }
+      ]
+    },
+    "abilities": {
+      "connectOrCreate": [
+        {
+          "where": {
+            "name": "Static"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "pokedexNumber": 95,
+    "name": "Onix",
+    "classification": "Pok\u00e9mon",
+    "generation": 1,
+    "isLegendary": false,
+    "height": 1.7,
+    "weight": 15.0,
+    "hp": 74,
+    "attack": 74,
+    "defense": 74,
+    "specialAttack": 69,
+    "specialDefense": 69,
+    "speed": 59,
+    "baseTotal": 394,
+    "spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/95.png",
+    "types": {
+      "connectOrCreate": [
+        {
+          "where": {
+            "name": "Ground"
+          }
+        }
+      ]
+    },
+    "abilities": {
+      "connectOrCreate": [
+        {
+          "where": {
+            "name": "Run Away"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "pokedexNumber": 96,
+    "name": "Drowzee",
+    "classification": "Pok\u00e9mon",
+    "generation": 1,
+    "isLegendary": false,
+    "height": 0.5,
+    "weight": 17.5,
+    "hp": 75,
+    "attack": 75,
+    "defense": 75,
+    "specialAttack": 70,
+    "specialDefense": 70,
+    "speed": 60,
+    "baseTotal": 395,
+    "spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/96.png",
+    "types": {
+      "connectOrCreate": [
+        {
+          "where": {
+            "name": "Flying"
+          }
+        }
+      ]
+    },
+    "abilities": {
+      "connectOrCreate": [
+        {
+          "where": {
+            "name": "Shield Dust"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "pokedexNumber": 97,
+    "name": "Hypno",
+    "classification": "Pok\u00e9mon",
+    "generation": 1,
+    "isLegendary": false,
+    "height": 0.8,
+    "weight": 20.0,
+    "hp": 76,
+    "attack": 76,
+    "defense": 76,
+    "specialAttack": 71,
+    "specialDefense": 71,
+    "speed": 61,
+    "baseTotal": 396,
+    "spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/97.png",
+    "types": {
+      "connectOrCreate": [
+        {
+          "where": {
+            "name": "Grass"
+          }
+        }
+      ]
+    },
+    "abilities": {
+      "connectOrCreate": [
+        {
+          "where": {
+            "name": "Overgrow"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "pokedexNumber": 98,
+    "name": "Krabby",
+    "classification": "Pok\u00e9mon",
+    "generation": 1,
+    "isLegendary": false,
+    "height": 1.1,
+    "weight": 22.5,
+    "hp": 77,
+    "attack": 77,
+    "defense": 77,
+    "specialAttack": 72,
+    "specialDefense": 72,
+    "speed": 62,
+    "baseTotal": 397,
+    "spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/98.png",
+    "types": {
+      "connectOrCreate": [
+        {
+          "where": {
+            "name": "Fire"
+          }
+        }
+      ]
+    },
+    "abilities": {
+      "connectOrCreate": [
+        {
+          "where": {
+            "name": "Blaze"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "pokedexNumber": 99,
+    "name": "Kingler",
+    "classification": "Pok\u00e9mon",
+    "generation": 1,
+    "isLegendary": false,
+    "height": 1.4,
+    "weight": 25.0,
+    "hp": 78,
+    "attack": 78,
+    "defense": 78,
+    "specialAttack": 73,
+    "specialDefense": 73,
+    "speed": 63,
+    "baseTotal": 398,
+    "spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/99.png",
+    "types": {
+      "connectOrCreate": [
+        {
+          "where": {
+            "name": "Water"
+          }
+        }
+      ]
+    },
+    "abilities": {
+      "connectOrCreate": [
+        {
+          "where": {
+            "name": "Torrent"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "pokedexNumber": 100,
+    "name": "Voltorb",
+    "classification": "Pok\u00e9mon",
+    "generation": 1,
+    "isLegendary": false,
+    "height": 1.7,
+    "weight": 27.5,
+    "hp": 79,
+    "attack": 79,
+    "defense": 79,
+    "specialAttack": 74,
+    "specialDefense": 74,
+    "speed": 64,
+    "baseTotal": 399,
+    "spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/100.png",
+    "types": {
+      "connectOrCreate": [
+        {
+          "where": {
+            "name": "Electric"
+          }
+        }
+      ]
+    },
+    "abilities": {
+      "connectOrCreate": [
+        {
+          "where": {
+            "name": "Static"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "pokedexNumber": 101,
+    "name": "Electrode",
+    "classification": "Pok\u00e9mon",
+    "generation": 1,
+    "isLegendary": false,
+    "height": 0.5,
+    "weight": 5.0,
+    "hp": 80,
+    "attack": 80,
+    "defense": 80,
+    "specialAttack": 75,
+    "specialDefense": 75,
+    "speed": 65,
+    "baseTotal": 400,
+    "spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/101.png",
+    "types": {
+      "connectOrCreate": [
+        {
+          "where": {
+            "name": "Normal"
+          }
+        }
+      ]
+    },
+    "abilities": {
+      "connectOrCreate": [
+        {
+          "where": {
+            "name": "Run Away"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "pokedexNumber": 102,
+    "name": "Exeggcute",
+    "classification": "Pok\u00e9mon",
+    "generation": 1,
+    "isLegendary": false,
+    "height": 0.8,
+    "weight": 7.5,
+    "hp": 81,
+    "attack": 81,
+    "defense": 81,
+    "specialAttack": 76,
+    "specialDefense": 76,
+    "speed": 66,
+    "baseTotal": 401,
+    "spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/102.png",
+    "types": {
+      "connectOrCreate": [
+        {
+          "where": {
+            "name": "Poison"
+          }
+        }
+      ]
+    },
+    "abilities": {
+      "connectOrCreate": [
+        {
+          "where": {
+            "name": "Shield Dust"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "pokedexNumber": 103,
+    "name": "Exeggutor",
+    "classification": "Pok\u00e9mon",
+    "generation": 1,
+    "isLegendary": false,
+    "height": 1.1,
+    "weight": 10.0,
+    "hp": 82,
+    "attack": 82,
+    "defense": 82,
+    "specialAttack": 77,
+    "specialDefense": 77,
+    "speed": 67,
+    "baseTotal": 402,
+    "spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/103.png",
+    "types": {
+      "connectOrCreate": [
+        {
+          "where": {
+            "name": "Ground"
+          }
+        }
+      ]
+    },
+    "abilities": {
+      "connectOrCreate": [
+        {
+          "where": {
+            "name": "Overgrow"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "pokedexNumber": 104,
+    "name": "Cubone",
+    "classification": "Pok\u00e9mon",
+    "generation": 1,
+    "isLegendary": false,
+    "height": 1.4,
+    "weight": 12.5,
+    "hp": 83,
+    "attack": 83,
+    "defense": 83,
+    "specialAttack": 78,
+    "specialDefense": 78,
+    "speed": 68,
+    "baseTotal": 403,
+    "spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/104.png",
+    "types": {
+      "connectOrCreate": [
+        {
+          "where": {
+            "name": "Flying"
+          }
+        }
+      ]
+    },
+    "abilities": {
+      "connectOrCreate": [
+        {
+          "where": {
+            "name": "Blaze"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "pokedexNumber": 105,
+    "name": "Marowak",
+    "classification": "Pok\u00e9mon",
+    "generation": 1,
+    "isLegendary": false,
+    "height": 1.7,
+    "weight": 15.0,
+    "hp": 84,
+    "attack": 84,
+    "defense": 84,
+    "specialAttack": 79,
+    "specialDefense": 79,
+    "speed": 69,
+    "baseTotal": 404,
+    "spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/105.png",
+    "types": {
+      "connectOrCreate": [
+        {
+          "where": {
+            "name": "Grass"
+          }
+        }
+      ]
+    },
+    "abilities": {
+      "connectOrCreate": [
+        {
+          "where": {
+            "name": "Torrent"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "pokedexNumber": 106,
+    "name": "Hitmonlee",
+    "classification": "Pok\u00e9mon",
+    "generation": 1,
+    "isLegendary": false,
+    "height": 0.5,
+    "weight": 17.5,
+    "hp": 85,
+    "attack": 85,
+    "defense": 85,
+    "specialAttack": 80,
+    "specialDefense": 80,
+    "speed": 70,
+    "baseTotal": 405,
+    "spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/106.png",
+    "types": {
+      "connectOrCreate": [
+        {
+          "where": {
+            "name": "Fire"
+          }
+        }
+      ]
+    },
+    "abilities": {
+      "connectOrCreate": [
+        {
+          "where": {
+            "name": "Static"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "pokedexNumber": 107,
+    "name": "Hitmonchan",
+    "classification": "Pok\u00e9mon",
+    "generation": 1,
+    "isLegendary": false,
+    "height": 0.8,
+    "weight": 20.0,
+    "hp": 86,
+    "attack": 86,
+    "defense": 86,
+    "specialAttack": 81,
+    "specialDefense": 81,
+    "speed": 71,
+    "baseTotal": 406,
+    "spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/107.png",
+    "types": {
+      "connectOrCreate": [
+        {
+          "where": {
+            "name": "Water"
+          }
+        }
+      ]
+    },
+    "abilities": {
+      "connectOrCreate": [
+        {
+          "where": {
+            "name": "Run Away"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "pokedexNumber": 108,
+    "name": "Lickitung",
+    "classification": "Pok\u00e9mon",
+    "generation": 1,
+    "isLegendary": false,
+    "height": 1.1,
+    "weight": 22.5,
+    "hp": 87,
+    "attack": 87,
+    "defense": 87,
+    "specialAttack": 82,
+    "specialDefense": 82,
+    "speed": 72,
+    "baseTotal": 407,
+    "spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/108.png",
+    "types": {
+      "connectOrCreate": [
+        {
+          "where": {
+            "name": "Electric"
+          }
+        }
+      ]
+    },
+    "abilities": {
+      "connectOrCreate": [
+        {
+          "where": {
+            "name": "Shield Dust"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "pokedexNumber": 109,
+    "name": "Koffing",
+    "classification": "Pok\u00e9mon",
+    "generation": 1,
+    "isLegendary": false,
+    "height": 1.4,
+    "weight": 25.0,
+    "hp": 88,
+    "attack": 88,
+    "defense": 88,
+    "specialAttack": 83,
+    "specialDefense": 83,
+    "speed": 73,
+    "baseTotal": 408,
+    "spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/109.png",
+    "types": {
+      "connectOrCreate": [
+        {
+          "where": {
+            "name": "Normal"
+          }
+        }
+      ]
+    },
+    "abilities": {
+      "connectOrCreate": [
+        {
+          "where": {
+            "name": "Overgrow"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "pokedexNumber": 110,
+    "name": "Weezing",
+    "classification": "Pok\u00e9mon",
+    "generation": 1,
+    "isLegendary": false,
+    "height": 1.7,
+    "weight": 27.5,
+    "hp": 89,
+    "attack": 89,
+    "defense": 89,
+    "specialAttack": 84,
+    "specialDefense": 84,
+    "speed": 74,
+    "baseTotal": 409,
+    "spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/110.png",
+    "types": {
+      "connectOrCreate": [
+        {
+          "where": {
+            "name": "Poison"
+          }
+        }
+      ]
+    },
+    "abilities": {
+      "connectOrCreate": [
+        {
+          "where": {
+            "name": "Blaze"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "pokedexNumber": 111,
+    "name": "Rhyhorn",
+    "classification": "Pok\u00e9mon",
+    "generation": 1,
+    "isLegendary": false,
+    "height": 0.5,
+    "weight": 5.0,
+    "hp": 90,
+    "attack": 90,
+    "defense": 90,
+    "specialAttack": 85,
+    "specialDefense": 85,
+    "speed": 75,
+    "baseTotal": 410,
+    "spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/111.png",
+    "types": {
+      "connectOrCreate": [
+        {
+          "where": {
+            "name": "Ground"
+          }
+        }
+      ]
+    },
+    "abilities": {
+      "connectOrCreate": [
+        {
+          "where": {
+            "name": "Torrent"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "pokedexNumber": 112,
+    "name": "Rhydon",
+    "classification": "Pok\u00e9mon",
+    "generation": 1,
+    "isLegendary": false,
+    "height": 0.8,
+    "weight": 7.5,
+    "hp": 91,
+    "attack": 91,
+    "defense": 91,
+    "specialAttack": 86,
+    "specialDefense": 86,
+    "speed": 76,
+    "baseTotal": 411,
+    "spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/112.png",
+    "types": {
+      "connectOrCreate": [
+        {
+          "where": {
+            "name": "Flying"
+          }
+        }
+      ]
+    },
+    "abilities": {
+      "connectOrCreate": [
+        {
+          "where": {
+            "name": "Static"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "pokedexNumber": 113,
+    "name": "Chansey",
+    "classification": "Pok\u00e9mon",
+    "generation": 1,
+    "isLegendary": false,
+    "height": 1.1,
+    "weight": 10.0,
+    "hp": 92,
+    "attack": 92,
+    "defense": 92,
+    "specialAttack": 87,
+    "specialDefense": 87,
+    "speed": 77,
+    "baseTotal": 412,
+    "spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/113.png",
+    "types": {
+      "connectOrCreate": [
+        {
+          "where": {
+            "name": "Grass"
+          }
+        }
+      ]
+    },
+    "abilities": {
+      "connectOrCreate": [
+        {
+          "where": {
+            "name": "Run Away"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "pokedexNumber": 114,
+    "name": "Tangela",
+    "classification": "Pok\u00e9mon",
+    "generation": 1,
+    "isLegendary": false,
+    "height": 1.4,
+    "weight": 12.5,
+    "hp": 93,
+    "attack": 93,
+    "defense": 93,
+    "specialAttack": 88,
+    "specialDefense": 88,
+    "speed": 78,
+    "baseTotal": 413,
+    "spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/114.png",
+    "types": {
+      "connectOrCreate": [
+        {
+          "where": {
+            "name": "Fire"
+          }
+        }
+      ]
+    },
+    "abilities": {
+      "connectOrCreate": [
+        {
+          "where": {
+            "name": "Shield Dust"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "pokedexNumber": 115,
+    "name": "Kangaskhan",
+    "classification": "Pok\u00e9mon",
+    "generation": 1,
+    "isLegendary": false,
+    "height": 1.7,
+    "weight": 15.0,
+    "hp": 94,
+    "attack": 94,
+    "defense": 94,
+    "specialAttack": 89,
+    "specialDefense": 89,
+    "speed": 79,
+    "baseTotal": 414,
+    "spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/115.png",
+    "types": {
+      "connectOrCreate": [
+        {
+          "where": {
+            "name": "Water"
+          }
+        }
+      ]
+    },
+    "abilities": {
+      "connectOrCreate": [
+        {
+          "where": {
+            "name": "Overgrow"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "pokedexNumber": 116,
+    "name": "Horsea",
+    "classification": "Pok\u00e9mon",
+    "generation": 1,
+    "isLegendary": false,
+    "height": 0.5,
+    "weight": 17.5,
+    "hp": 95,
+    "attack": 95,
+    "defense": 95,
+    "specialAttack": 90,
+    "specialDefense": 90,
+    "speed": 80,
+    "baseTotal": 415,
+    "spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/116.png",
+    "types": {
+      "connectOrCreate": [
+        {
+          "where": {
+            "name": "Electric"
+          }
+        }
+      ]
+    },
+    "abilities": {
+      "connectOrCreate": [
+        {
+          "where": {
+            "name": "Blaze"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "pokedexNumber": 117,
+    "name": "Seadra",
+    "classification": "Pok\u00e9mon",
+    "generation": 1,
+    "isLegendary": false,
+    "height": 0.8,
+    "weight": 20.0,
+    "hp": 96,
+    "attack": 96,
+    "defense": 96,
+    "specialAttack": 91,
+    "specialDefense": 91,
+    "speed": 81,
+    "baseTotal": 416,
+    "spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/117.png",
+    "types": {
+      "connectOrCreate": [
+        {
+          "where": {
+            "name": "Normal"
+          }
+        }
+      ]
+    },
+    "abilities": {
+      "connectOrCreate": [
+        {
+          "where": {
+            "name": "Torrent"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "pokedexNumber": 118,
+    "name": "Goldeen",
+    "classification": "Pok\u00e9mon",
+    "generation": 1,
+    "isLegendary": false,
+    "height": 1.1,
+    "weight": 22.5,
+    "hp": 97,
+    "attack": 97,
+    "defense": 97,
+    "specialAttack": 92,
+    "specialDefense": 92,
+    "speed": 82,
+    "baseTotal": 417,
+    "spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/118.png",
+    "types": {
+      "connectOrCreate": [
+        {
+          "where": {
+            "name": "Poison"
+          }
+        }
+      ]
+    },
+    "abilities": {
+      "connectOrCreate": [
+        {
+          "where": {
+            "name": "Static"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "pokedexNumber": 119,
+    "name": "Seaking",
+    "classification": "Pok\u00e9mon",
+    "generation": 1,
+    "isLegendary": false,
+    "height": 1.4,
+    "weight": 25.0,
+    "hp": 98,
+    "attack": 98,
+    "defense": 98,
+    "specialAttack": 93,
+    "specialDefense": 93,
+    "speed": 83,
+    "baseTotal": 418,
+    "spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/119.png",
+    "types": {
+      "connectOrCreate": [
+        {
+          "where": {
+            "name": "Ground"
+          }
+        }
+      ]
+    },
+    "abilities": {
+      "connectOrCreate": [
+        {
+          "where": {
+            "name": "Run Away"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "pokedexNumber": 120,
+    "name": "Staryu",
+    "classification": "Pok\u00e9mon",
+    "generation": 1,
+    "isLegendary": false,
+    "height": 1.7,
+    "weight": 27.5,
+    "hp": 99,
+    "attack": 99,
+    "defense": 99,
+    "specialAttack": 94,
+    "specialDefense": 94,
+    "speed": 84,
+    "baseTotal": 419,
+    "spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/120.png",
+    "types": {
+      "connectOrCreate": [
+        {
+          "where": {
+            "name": "Flying"
+          }
+        }
+      ]
+    },
+    "abilities": {
+      "connectOrCreate": [
+        {
+          "where": {
+            "name": "Shield Dust"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "pokedexNumber": 121,
+    "name": "Starmie",
+    "classification": "Pok\u00e9mon",
+    "generation": 1,
+    "isLegendary": false,
+    "height": 0.5,
+    "weight": 5.0,
+    "hp": 40,
+    "attack": 100,
+    "defense": 100,
+    "specialAttack": 95,
+    "specialDefense": 95,
+    "speed": 85,
+    "baseTotal": 420,
+    "spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/121.png",
+    "types": {
+      "connectOrCreate": [
+        {
+          "where": {
+            "name": "Grass"
+          }
+        }
+      ]
+    },
+    "abilities": {
+      "connectOrCreate": [
+        {
+          "where": {
+            "name": "Overgrow"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "pokedexNumber": 122,
+    "name": "Mr. Mime",
+    "classification": "Pok\u00e9mon",
+    "generation": 1,
+    "isLegendary": false,
+    "height": 0.8,
+    "weight": 7.5,
+    "hp": 41,
+    "attack": 101,
+    "defense": 101,
+    "specialAttack": 96,
+    "specialDefense": 96,
+    "speed": 86,
+    "baseTotal": 421,
+    "spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/122.png",
+    "types": {
+      "connectOrCreate": [
+        {
+          "where": {
+            "name": "Fire"
+          }
+        }
+      ]
+    },
+    "abilities": {
+      "connectOrCreate": [
+        {
+          "where": {
+            "name": "Blaze"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "pokedexNumber": 123,
+    "name": "Scyther",
+    "classification": "Pok\u00e9mon",
+    "generation": 1,
+    "isLegendary": false,
+    "height": 1.1,
+    "weight": 10.0,
+    "hp": 42,
+    "attack": 102,
+    "defense": 102,
+    "specialAttack": 97,
+    "specialDefense": 97,
+    "speed": 87,
+    "baseTotal": 422,
+    "spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/123.png",
+    "types": {
+      "connectOrCreate": [
+        {
+          "where": {
+            "name": "Water"
+          }
+        }
+      ]
+    },
+    "abilities": {
+      "connectOrCreate": [
+        {
+          "where": {
+            "name": "Torrent"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "pokedexNumber": 124,
+    "name": "Jynx",
+    "classification": "Pok\u00e9mon",
+    "generation": 1,
+    "isLegendary": false,
+    "height": 1.4,
+    "weight": 12.5,
+    "hp": 43,
+    "attack": 103,
+    "defense": 103,
+    "specialAttack": 98,
+    "specialDefense": 98,
+    "speed": 88,
+    "baseTotal": 423,
+    "spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/124.png",
+    "types": {
+      "connectOrCreate": [
+        {
+          "where": {
+            "name": "Electric"
+          }
+        }
+      ]
+    },
+    "abilities": {
+      "connectOrCreate": [
+        {
+          "where": {
+            "name": "Static"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "pokedexNumber": 125,
+    "name": "Electabuzz",
+    "classification": "Pok\u00e9mon",
+    "generation": 1,
+    "isLegendary": false,
+    "height": 1.7,
+    "weight": 15.0,
+    "hp": 44,
+    "attack": 104,
+    "defense": 104,
+    "specialAttack": 99,
+    "specialDefense": 99,
+    "speed": 89,
+    "baseTotal": 424,
+    "spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/125.png",
+    "types": {
+      "connectOrCreate": [
+        {
+          "where": {
+            "name": "Normal"
+          }
+        }
+      ]
+    },
+    "abilities": {
+      "connectOrCreate": [
+        {
+          "where": {
+            "name": "Run Away"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "pokedexNumber": 126,
+    "name": "Magmar",
+    "classification": "Pok\u00e9mon",
+    "generation": 1,
+    "isLegendary": false,
+    "height": 0.5,
+    "weight": 17.5,
+    "hp": 45,
+    "attack": 105,
+    "defense": 105,
+    "specialAttack": 100,
+    "specialDefense": 100,
+    "speed": 90,
+    "baseTotal": 425,
+    "spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/126.png",
+    "types": {
+      "connectOrCreate": [
+        {
+          "where": {
+            "name": "Poison"
+          }
+        }
+      ]
+    },
+    "abilities": {
+      "connectOrCreate": [
+        {
+          "where": {
+            "name": "Shield Dust"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "pokedexNumber": 127,
+    "name": "Pinsir",
+    "classification": "Pok\u00e9mon",
+    "generation": 1,
+    "isLegendary": false,
+    "height": 0.8,
+    "weight": 20.0,
+    "hp": 46,
+    "attack": 106,
+    "defense": 106,
+    "specialAttack": 101,
+    "specialDefense": 101,
+    "speed": 91,
+    "baseTotal": 426,
+    "spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/127.png",
+    "types": {
+      "connectOrCreate": [
+        {
+          "where": {
+            "name": "Ground"
+          }
+        }
+      ]
+    },
+    "abilities": {
+      "connectOrCreate": [
+        {
+          "where": {
+            "name": "Overgrow"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "pokedexNumber": 128,
+    "name": "Tauros",
+    "classification": "Pok\u00e9mon",
+    "generation": 1,
+    "isLegendary": false,
+    "height": 1.1,
+    "weight": 22.5,
+    "hp": 47,
+    "attack": 107,
+    "defense": 107,
+    "specialAttack": 102,
+    "specialDefense": 102,
+    "speed": 92,
+    "baseTotal": 427,
+    "spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/128.png",
+    "types": {
+      "connectOrCreate": [
+        {
+          "where": {
+            "name": "Flying"
+          }
+        }
+      ]
+    },
+    "abilities": {
+      "connectOrCreate": [
+        {
+          "where": {
+            "name": "Blaze"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "pokedexNumber": 129,
+    "name": "Magikarp",
+    "classification": "Pok\u00e9mon",
+    "generation": 1,
+    "isLegendary": false,
+    "height": 1.4,
+    "weight": 25.0,
+    "hp": 48,
+    "attack": 108,
+    "defense": 108,
+    "specialAttack": 103,
+    "specialDefense": 103,
+    "speed": 93,
+    "baseTotal": 428,
+    "spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/129.png",
+    "types": {
+      "connectOrCreate": [
+        {
+          "where": {
+            "name": "Grass"
+          }
+        }
+      ]
+    },
+    "abilities": {
+      "connectOrCreate": [
+        {
+          "where": {
+            "name": "Torrent"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "pokedexNumber": 130,
+    "name": "Gyarados",
+    "classification": "Pok\u00e9mon",
+    "generation": 1,
+    "isLegendary": false,
+    "height": 1.7,
+    "weight": 27.5,
+    "hp": 49,
+    "attack": 109,
+    "defense": 109,
+    "specialAttack": 104,
+    "specialDefense": 104,
+    "speed": 94,
+    "baseTotal": 429,
+    "spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/130.png",
+    "types": {
+      "connectOrCreate": [
+        {
+          "where": {
+            "name": "Fire"
+          }
+        }
+      ]
+    },
+    "abilities": {
+      "connectOrCreate": [
+        {
+          "where": {
+            "name": "Static"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "pokedexNumber": 131,
+    "name": "Lapras",
+    "classification": "Pok\u00e9mon",
+    "generation": 1,
+    "isLegendary": false,
+    "height": 0.5,
+    "weight": 5.0,
+    "hp": 50,
+    "attack": 110,
+    "defense": 45,
+    "specialAttack": 105,
+    "specialDefense": 105,
+    "speed": 95,
+    "baseTotal": 430,
+    "spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/131.png",
+    "types": {
+      "connectOrCreate": [
+        {
+          "where": {
+            "name": "Water"
+          }
+        }
+      ]
+    },
+    "abilities": {
+      "connectOrCreate": [
+        {
+          "where": {
+            "name": "Run Away"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "pokedexNumber": 132,
+    "name": "Ditto",
+    "classification": "Pok\u00e9mon",
+    "generation": 1,
+    "isLegendary": false,
+    "height": 0.8,
+    "weight": 7.5,
+    "hp": 51,
+    "attack": 111,
+    "defense": 46,
+    "specialAttack": 106,
+    "specialDefense": 106,
+    "speed": 96,
+    "baseTotal": 431,
+    "spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/132.png",
+    "types": {
+      "connectOrCreate": [
+        {
+          "where": {
+            "name": "Electric"
+          }
+        }
+      ]
+    },
+    "abilities": {
+      "connectOrCreate": [
+        {
+          "where": {
+            "name": "Shield Dust"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "pokedexNumber": 133,
+    "name": "Eevee",
+    "classification": "Pok\u00e9mon",
+    "generation": 1,
+    "isLegendary": false,
+    "height": 1.1,
+    "weight": 10.0,
+    "hp": 52,
+    "attack": 112,
+    "defense": 47,
+    "specialAttack": 107,
+    "specialDefense": 107,
+    "speed": 97,
+    "baseTotal": 432,
+    "spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/133.png",
+    "types": {
+      "connectOrCreate": [
+        {
+          "where": {
+            "name": "Normal"
+          }
+        }
+      ]
+    },
+    "abilities": {
+      "connectOrCreate": [
+        {
+          "where": {
+            "name": "Overgrow"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "pokedexNumber": 134,
+    "name": "Vaporeon",
+    "classification": "Pok\u00e9mon",
+    "generation": 1,
+    "isLegendary": false,
+    "height": 1.4,
+    "weight": 12.5,
+    "hp": 53,
+    "attack": 113,
+    "defense": 48,
+    "specialAttack": 108,
+    "specialDefense": 108,
+    "speed": 98,
+    "baseTotal": 433,
+    "spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/134.png",
+    "types": {
+      "connectOrCreate": [
+        {
+          "where": {
+            "name": "Poison"
+          }
+        }
+      ]
+    },
+    "abilities": {
+      "connectOrCreate": [
+        {
+          "where": {
+            "name": "Blaze"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "pokedexNumber": 135,
+    "name": "Jolteon",
+    "classification": "Pok\u00e9mon",
+    "generation": 1,
+    "isLegendary": false,
+    "height": 1.7,
+    "weight": 15.0,
+    "hp": 54,
+    "attack": 114,
+    "defense": 49,
+    "specialAttack": 109,
+    "specialDefense": 109,
+    "speed": 99,
+    "baseTotal": 434,
+    "spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/135.png",
+    "types": {
+      "connectOrCreate": [
+        {
+          "where": {
+            "name": "Ground"
+          }
+        }
+      ]
+    },
+    "abilities": {
+      "connectOrCreate": [
+        {
+          "where": {
+            "name": "Torrent"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "pokedexNumber": 136,
+    "name": "Flareon",
+    "classification": "Pok\u00e9mon",
+    "generation": 1,
+    "isLegendary": false,
+    "height": 0.5,
+    "weight": 17.5,
+    "hp": 55,
+    "attack": 115,
+    "defense": 50,
+    "specialAttack": 110,
+    "specialDefense": 110,
+    "speed": 100,
+    "baseTotal": 435,
+    "spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/136.png",
+    "types": {
+      "connectOrCreate": [
+        {
+          "where": {
+            "name": "Flying"
+          }
+        }
+      ]
+    },
+    "abilities": {
+      "connectOrCreate": [
+        {
+          "where": {
+            "name": "Static"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "pokedexNumber": 137,
+    "name": "Porygon",
+    "classification": "Pok\u00e9mon",
+    "generation": 1,
+    "isLegendary": false,
+    "height": 0.8,
+    "weight": 20.0,
+    "hp": 56,
+    "attack": 116,
+    "defense": 51,
+    "specialAttack": 111,
+    "specialDefense": 111,
+    "speed": 101,
+    "baseTotal": 436,
+    "spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/137.png",
+    "types": {
+      "connectOrCreate": [
+        {
+          "where": {
+            "name": "Grass"
+          }
+        }
+      ]
+    },
+    "abilities": {
+      "connectOrCreate": [
+        {
+          "where": {
+            "name": "Run Away"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "pokedexNumber": 138,
+    "name": "Omanyte",
+    "classification": "Pok\u00e9mon",
+    "generation": 1,
+    "isLegendary": false,
+    "height": 1.1,
+    "weight": 22.5,
+    "hp": 57,
+    "attack": 117,
+    "defense": 52,
+    "specialAttack": 112,
+    "specialDefense": 112,
+    "speed": 102,
+    "baseTotal": 437,
+    "spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/138.png",
+    "types": {
+      "connectOrCreate": [
+        {
+          "where": {
+            "name": "Fire"
+          }
+        }
+      ]
+    },
+    "abilities": {
+      "connectOrCreate": [
+        {
+          "where": {
+            "name": "Shield Dust"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "pokedexNumber": 139,
+    "name": "Omastar",
+    "classification": "Pok\u00e9mon",
+    "generation": 1,
+    "isLegendary": false,
+    "height": 1.4,
+    "weight": 25.0,
+    "hp": 58,
+    "attack": 118,
+    "defense": 53,
+    "specialAttack": 113,
+    "specialDefense": 113,
+    "speed": 103,
+    "baseTotal": 438,
+    "spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/139.png",
+    "types": {
+      "connectOrCreate": [
+        {
+          "where": {
+            "name": "Water"
+          }
+        }
+      ]
+    },
+    "abilities": {
+      "connectOrCreate": [
+        {
+          "where": {
+            "name": "Overgrow"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "pokedexNumber": 140,
+    "name": "Kabuto",
+    "classification": "Pok\u00e9mon",
+    "generation": 1,
+    "isLegendary": false,
+    "height": 1.7,
+    "weight": 27.5,
+    "hp": 59,
+    "attack": 119,
+    "defense": 54,
+    "specialAttack": 114,
+    "specialDefense": 114,
+    "speed": 104,
+    "baseTotal": 439,
+    "spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/140.png",
+    "types": {
+      "connectOrCreate": [
+        {
+          "where": {
+            "name": "Electric"
+          }
+        }
+      ]
+    },
+    "abilities": {
+      "connectOrCreate": [
+        {
+          "where": {
+            "name": "Blaze"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "pokedexNumber": 141,
+    "name": "Kabutops",
+    "classification": "Pok\u00e9mon",
+    "generation": 1,
+    "isLegendary": false,
+    "height": 0.5,
+    "weight": 5.0,
+    "hp": 60,
+    "attack": 50,
+    "defense": 55,
+    "specialAttack": 115,
+    "specialDefense": 115,
+    "speed": 105,
+    "baseTotal": 440,
+    "spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/141.png",
+    "types": {
+      "connectOrCreate": [
+        {
+          "where": {
+            "name": "Normal"
+          }
+        }
+      ]
+    },
+    "abilities": {
+      "connectOrCreate": [
+        {
+          "where": {
+            "name": "Torrent"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "pokedexNumber": 142,
+    "name": "Aerodactyl",
+    "classification": "Pok\u00e9mon",
+    "generation": 1,
+    "isLegendary": false,
+    "height": 0.8,
+    "weight": 7.5,
+    "hp": 61,
+    "attack": 51,
+    "defense": 56,
+    "specialAttack": 116,
+    "specialDefense": 116,
+    "speed": 106,
+    "baseTotal": 441,
+    "spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/142.png",
+    "types": {
+      "connectOrCreate": [
+        {
+          "where": {
+            "name": "Poison"
+          }
+        }
+      ]
+    },
+    "abilities": {
+      "connectOrCreate": [
+        {
+          "where": {
+            "name": "Static"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "pokedexNumber": 143,
+    "name": "Snorlax",
+    "classification": "Pok\u00e9mon",
+    "generation": 1,
+    "isLegendary": false,
+    "height": 1.1,
+    "weight": 10.0,
+    "hp": 62,
+    "attack": 52,
+    "defense": 57,
+    "specialAttack": 117,
+    "specialDefense": 117,
+    "speed": 107,
+    "baseTotal": 442,
+    "spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/143.png",
+    "types": {
+      "connectOrCreate": [
+        {
+          "where": {
+            "name": "Ground"
+          }
+        }
+      ]
+    },
+    "abilities": {
+      "connectOrCreate": [
+        {
+          "where": {
+            "name": "Run Away"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "pokedexNumber": 144,
+    "name": "Articuno",
+    "classification": "Pok\u00e9mon",
+    "generation": 1,
+    "isLegendary": true,
+    "height": 1.4,
+    "weight": 12.5,
+    "hp": 63,
+    "attack": 53,
+    "defense": 58,
+    "specialAttack": 118,
+    "specialDefense": 118,
+    "speed": 108,
+    "baseTotal": 443,
+    "spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/144.png",
+    "types": {
+      "connectOrCreate": [
+        {
+          "where": {
+            "name": "Flying"
+          }
+        }
+      ]
+    },
+    "abilities": {
+      "connectOrCreate": [
+        {
+          "where": {
+            "name": "Shield Dust"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "pokedexNumber": 145,
+    "name": "Zapdos",
+    "classification": "Pok\u00e9mon",
+    "generation": 1,
+    "isLegendary": true,
+    "height": 1.7,
+    "weight": 15.0,
+    "hp": 64,
+    "attack": 54,
+    "defense": 59,
+    "specialAttack": 119,
+    "specialDefense": 119,
+    "speed": 109,
+    "baseTotal": 444,
+    "spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/145.png",
+    "types": {
+      "connectOrCreate": [
+        {
+          "where": {
+            "name": "Grass"
+          }
+        }
+      ]
+    },
+    "abilities": {
+      "connectOrCreate": [
+        {
+          "where": {
+            "name": "Overgrow"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "pokedexNumber": 146,
+    "name": "Moltres",
+    "classification": "Pok\u00e9mon",
+    "generation": 1,
+    "isLegendary": true,
+    "height": 0.5,
+    "weight": 17.5,
+    "hp": 65,
+    "attack": 55,
+    "defense": 60,
+    "specialAttack": 120,
+    "specialDefense": 120,
+    "speed": 110,
+    "baseTotal": 445,
+    "spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/146.png",
+    "types": {
+      "connectOrCreate": [
+        {
+          "where": {
+            "name": "Fire"
+          }
+        }
+      ]
+    },
+    "abilities": {
+      "connectOrCreate": [
+        {
+          "where": {
+            "name": "Blaze"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "pokedexNumber": 147,
+    "name": "Dratini",
+    "classification": "Pok\u00e9mon",
+    "generation": 1,
+    "isLegendary": false,
+    "height": 0.8,
+    "weight": 20.0,
+    "hp": 66,
+    "attack": 56,
+    "defense": 61,
+    "specialAttack": 121,
+    "specialDefense": 121,
+    "speed": 111,
+    "baseTotal": 446,
+    "spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/147.png",
+    "types": {
+      "connectOrCreate": [
+        {
+          "where": {
+            "name": "Water"
+          }
+        }
+      ]
+    },
+    "abilities": {
+      "connectOrCreate": [
+        {
+          "where": {
+            "name": "Torrent"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "pokedexNumber": 148,
+    "name": "Dragonair",
+    "classification": "Pok\u00e9mon",
+    "generation": 1,
+    "isLegendary": false,
+    "height": 1.1,
+    "weight": 22.5,
+    "hp": 67,
+    "attack": 57,
+    "defense": 62,
+    "specialAttack": 122,
+    "specialDefense": 122,
+    "speed": 112,
+    "baseTotal": 447,
+    "spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/148.png",
+    "types": {
+      "connectOrCreate": [
+        {
+          "where": {
+            "name": "Electric"
+          }
+        }
+      ]
+    },
+    "abilities": {
+      "connectOrCreate": [
+        {
+          "where": {
+            "name": "Static"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "pokedexNumber": 149,
+    "name": "Dragonite",
+    "classification": "Pok\u00e9mon",
+    "generation": 1,
+    "isLegendary": false,
+    "height": 1.4,
+    "weight": 25.0,
+    "hp": 68,
+    "attack": 58,
+    "defense": 63,
+    "specialAttack": 123,
+    "specialDefense": 123,
+    "speed": 113,
+    "baseTotal": 448,
+    "spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/149.png",
+    "types": {
+      "connectOrCreate": [
+        {
+          "where": {
+            "name": "Normal"
+          }
+        }
+      ]
+    },
+    "abilities": {
+      "connectOrCreate": [
+        {
+          "where": {
+            "name": "Run Away"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "pokedexNumber": 150,
+    "name": "Mewtwo",
+    "classification": "Pok\u00e9mon",
+    "generation": 1,
+    "isLegendary": true,
+    "height": 1.7,
+    "weight": 27.5,
+    "hp": 69,
+    "attack": 59,
+    "defense": 64,
+    "specialAttack": 124,
+    "specialDefense": 124,
+    "speed": 114,
+    "baseTotal": 449,
+    "spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/150.png",
+    "types": {
+      "connectOrCreate": [
+        {
+          "where": {
+            "name": "Poison"
+          }
+        }
+      ]
+    },
+    "abilities": {
+      "connectOrCreate": [
+        {
+          "where": {
+            "name": "Shield Dust"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "pokedexNumber": 151,
+    "name": "Mew",
+    "classification": "Pok\u00e9mon",
+    "generation": 1,
+    "isLegendary": true,
+    "height": 0.5,
+    "weight": 5.0,
+    "hp": 70,
+    "attack": 60,
+    "defense": 65,
+    "specialAttack": 50,
+    "specialDefense": 50,
+    "speed": 115,
+    "baseTotal": 450,
+    "spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/151.png",
+    "types": {
+      "connectOrCreate": [
+        {
+          "where": {
+            "name": "Ground"
+          }
+        }
+      ]
+    },
+    "abilities": {
+      "connectOrCreate": [
+        {
+          "where": {
+            "name": "Overgrow"
+          }
+        }
+      ]
+    }
+  }
+]
