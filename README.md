@@ -1,36 +1,98 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# PocketPokemon
 
-## Getting Started
+A modern, full-stack Pokémon application built with React, Next.js, TypeScript, and PostgreSQL.
 
-First, run the development server:
+## Live Demo
+[PocketPokemon - Live Application](https://pocketpoke.vercel.app/)
 
+## Features
+✓ Search Pokémon by name  
+✓ Compare Pokémon stats side-by-side  
+✓ Filter by type with pagination  
+✓ Persistent favorites (localStorage)  
+✓ Detailed view with full stats and abilities  
+✓ Professional responsive UI (Material UI)  
+✓ Type-safe full-stack (TypeScript + tRPC + Prisma)  
+✓ Health check API for uptime monitoring  
+
+## Tech Stack
+- **Frontend**: React 19, Next.js 16, TypeScript 5, Material UI 7
+- **Backend**: tRPC 11, Node.js
+- **Database**: PostgreSQL (Neon - serverless)
+- **ORM**: Prisma 5
+- **Hosting**: Vercel (serverless)
+- **Validation**: Zod 4
+
+## Quick Start (Local Development)
+
+### Prerequisites
+- Node.js 18+ and npm
+- PostgreSQL running (or Neon account)
+
+### Installation
 ```bash
+# Clone repository
+git clone https://github.com/YOUR_USERNAME/pokepocket.git
+cd pokepocket
+
+# Install dependencies
+npm install
+
+# Setup environment
+cp .env.example .env.local
+# Edit .env.local with your DATABASE_URL from Neon
+
+# Migrate and seed database
+npm run db:migrate
+npm run db:seed
+
+# Start dev server
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+
+# Visit http://localhost:3000
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 📖 Routes
+- `/` - Home with popular Pokémon and navigation
+- `/search-poke` - Search single Pokémon by name
+- `/compare-poke` - Compare two Pokémon stats
+- `/all-type-poke` - Browse by type with pagination
+- `/fav` - View saved favorite Pokémon
+- `/api/health` - Health check for uptime monitoring
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 💾 Data Persistence
+- **Favorites**: Stored in browser localStorage (no backend database needed)
+- **Data**: Seeded from `prisma/data/pokemon.json` (1025 Pokémon)
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 🔒 Environment Variables
+- `DATABASE_URL` - PostgreSQL connection string from Neon
 
-## Learn More
 
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## 📊 Project Structure
+```
+pokepocket/
+├── src/
+│   ├── app/                    # Next.js App Router pages
+│   │   ├── page.tsx            # Home route
+│   │   ├── search-poke/        # Search route
+│   │   ├── compare-poke/       # Compare route
+│   │   ├── all-type-poke/      # Filter route
+│   │   ├── fav/                # Favorites route
+│   │   └── api/                # Backend API
+│   │       ├── trpc/           # tRPC endpoints
+│   │       └── health/         # Health check
+│   ├── components/             # React components
+│   │   ├── layout/             # Navigation
+│   │   ├── providers/          # Context providers
+│   │   └── pocketpokemon/      # Card components
+│   ├── server/                 # Backend logic
+│   │   ├── db.ts               # Prisma client
+│   │   ├── trpc.ts             # tRPC setup
+│   │   └── routers/            # API procedures
+│   └── types/                  # TypeScript types
+├── prisma/
+│   ├── schema.prisma           # Database schema
+│   ├── seed.ts                 # Data seeding
+│   └── data/                   # Seed data
+└── package.json
+```
